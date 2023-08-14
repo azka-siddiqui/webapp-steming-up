@@ -1,0 +1,53 @@
+
+.basicText{
+    margin: 30px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+.basicText h3{
+padding-bottom: 15px;
+}
+
+.basicText p{
+font-family: sans-serif;
+}
+
+.row{
+    width: 75%;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .column{
+    width: 75%;
+    height: 100%;
+    background-color: #fafafa;
+    margin-bottom: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .row img{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: 150px;
+    width: 90%;
+    margin: auto;
+    display: block;
+  }
+  
+  .row button{
+    background-color: black;
+    position: absolute;
+    bottom: 20px;
+    color: white;
+  } 
+
