@@ -1,0 +1,96 @@
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    Spinner,
+    ModalBody,
+    ModalCloseButton,
+    Button,
+    chakra,
+    FormControl,
+    Text, FormHelperText,
+    Input
+} from '@chakra-ui/react'
+// import useState
+import { useState, useEffect } from 'react'
+export const SignUpModal = () => {
+    // const { isOpen, onOpen, onClose } = useDisclosure()
+    const [showModal, setShowModal] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => setShowModal(true), 1000);
+    }, []);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+        let email = document.getElementById('email').value;
+
+        const resp = await fetch('/api/subscribe', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email
+            })
+        })
+
+        const data = await resp.json();
+
+        if (data.accepted) {
+            setSubmitted(true);
+        }
+        setLoading(false);
+    }
+
+    return (
+        <>
+            {showModal ? <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+                <ModalOverlay />
+                <ModalContent>
+                    <ModalHeader>
+                        <Text fontWeight='black'>
+                            Subscribe to the <chakra.span color='#F1C232'>OurCity</chakra.span> newsletter!
+                        </Text>
+                    </ModalHeader>
+                    <ModalCloseButton />
+                    {!submitted && (<>
+                        <ModalBody>
+                            <FormControl isRequired>
+                                <Input id='email' placeholder='e.g. example@example.com' />
+                                <FormHelperText ml='1'>We promise its an email worth reading.</FormHelperText>
+                            </FormControl>
+                        </ModalBody>
+
+                        <ModalFooter justifyContent='start'>
+                            <Button bg='#3B005A' mr={3} fontSize='md' color='white' _hover={{ bg: '#28003d' }} onClick={handleSubmit}>
+                                {loading && <Spinner size='sm' mr={3} />}
+                                Subscribe
+                            </Button>
+                        </ModalFooter>
+                    </>)}
+
+                    {submitted && (<>
+
+                        <ModalBody>
+                            <Text>
+                                Thanks for subscribing!
+                            </Text>
+                        </ModalBody>
+                        <ModalFooter justifyContent='start'>
+                            <Button colorScheme='blue' mr={3} fontSize='md' onClick={() => setShowModal(false)}>
+                                Close
+                            </Button>
+                        </ModalFooter>
+                    </>)}
+                </ModalContent>
+            </Modal> : null}
+
+        </>
+    )
+}
