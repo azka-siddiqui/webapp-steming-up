@@ -72,30 +72,15 @@ export default function Home() {
                 <Text>
                 From our conversations with urban planners working in both government and consulting, we 
                 know that many planners recognize the importance of engaging youth but don’t know how to effectively 
-                incorporate it into their work. Through OurCity, youth can share their ideas for changes to their 
-                local community or city to make the infrastructure more sustainable.
+                incorporate it into their work. Similarly, youth do not know how they can get involved in their cities urban planning initiatives. OurCity is here to change that - youth can share their ideas for changes to their 
+                local community or city to make the infrastructure more sustainable. 
 
                 </Text>
-
-                < div className = "centered-list">
-                <Text mt="8">
-                Cities For Youth is a toolkit for youth engagement in planning. Drawing from the experience of urban 
-                planning professionals across the world, our toolkit includes:
-                <Text mt = "4">
-                <ul className="guideTools" style={{ listStyleType: 'disc', listStylePosition: 'inside', marginLeft: '40px'}}>
-                <li>Guiding principles</li>
-                <li>Case Studies</li>
-                <li>Best Practises</li>
-                </ul>
-                </Text>
-                </Text>
-                </div>
 
                 <Text mt="8">
-                From outreach to ideation to feedback and follow-up,
-                it is a helpful resource for those looking to better 
-                connect with the new generation and deliver more 
-                youth-friendly outcomes — creating cities for youth.
+                Youth can also fill out our form about a project or idea that they would like to see implemented in their community. We will then work with our partners to help bring this vision to life alongside young people. 
+                From outreach to ideation to feedback and follow-up, our program is a tangible way for youth to kickstart their journey in urban planning and make an impact in their community. We also host workshops as a helpful resource for those looking to better 
+                create liveable communities — cities for everyone.
                 </Text>
                 
               </Box>

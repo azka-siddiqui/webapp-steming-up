@@ -173,6 +173,7 @@ font-family: sans-serif;
   list-style: none;
   text-align: center;
   list-style-position: inside;
+  color: "white";
 }
 
 .centered-list ul {
@@ -180,6 +181,7 @@ font-family: sans-serif;
   text-align: left;
   list-style-position: inside;
   list-style: none;
+  color: "white";
 }
 
 .centered-list li {
@@ -188,4 +190,9 @@ font-family: sans-serif;
   text-align: left;
   list-style-position: inside;
   list-style: none;
+  color: "white";
+}
+
+.guideTools {
+  color: white;
 }

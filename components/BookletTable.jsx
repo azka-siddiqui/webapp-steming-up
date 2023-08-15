@@ -19,9 +19,17 @@ export const BookletTable = () => {
             Our Toolkit For Youth Engagement Planning:
           </Text>{" "}
         </Heading>
-        <Text color="white" fontSize="2xl" fontWeight="normal" my={4}>
-        A helpful resource for planners and community engagement professionals looking to better connect with the new generation and deliver more youth-friendly outcomes
+        <Text color="white" fontSize="18px" fontWeight="normal" my={4}>
+        A helpful resource for planners and community engagement professionals looking to better connect with the new generation and deliver more youth-friendly outcomes. Drawing from the experience of urban 
+                planning professionals across the world, our toolkit includes:
         </Text>
+        < div className = "centered-list">
+                <ul className="guideTools" style={{ listStyleType: 'disc', listStylePosition: 'inside', color: 'white', marginLeft: '10px'}}>
+                <li >Guiding principles</li>
+                <li>Case Studies</li>
+                <li>Best Practises</li>
+                </ul>
+          </div>
 
         <Button
           color="#494949"
@@ -30,6 +38,7 @@ export const BookletTable = () => {
           bg={"#F1C232"}
           rounded={"full"}
           px={6}
+          mt = '15px'
           _hover={{
             bg: "#c9a228",
           }}
