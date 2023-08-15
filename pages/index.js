@@ -95,7 +95,7 @@ export default function Home() {
                 From outreach to ideation to feedback and follow-up,
                 it is a helpful resource for those looking to better 
                 connect with the new generation and deliver more 
-                youth-friendly outcomes —creating cities for youth.
+                youth-friendly outcomes — creating cities for youth.
                 </Text>
                 
               </Box>
