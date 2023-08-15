@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { News } from "../components/News";
 import { Landing } from "../components/Landing";
 import { DetailsTable } from "../components/DetailsTable";
 import {
@@ -57,6 +58,8 @@ export default function Home() {
 
             <SmSep />
 
+            <SmSep line={true} />
+
             <Box textAlign="center" maxW="900px" mx="auto" id="about" mt = "100px">
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">
                 About{" "}
@@ -94,11 +97,15 @@ export default function Home() {
                 connect with the new generation and deliver more 
                 youth-friendly outcomes —creating cities for youth.
                 </Text>
+                
               </Box>
+              
             </Box>
 
+
             <MedSep />
-            <Box textAlign="center" maxW="700px" mx="auto" mb={10}>
+
+            <Box textAlign="center" maxW="700px" mx="auto" mb={14} mt="-50px">
               <Heading
                 as="h1"
                 size="3xl"
@@ -130,6 +137,12 @@ export default function Home() {
             <SmSep line={true} />
 
             <MedSep />
+
+            <SmSep />
+
+            <News />
+
+            <SmSep line={true} />
 
             <Box textAlign="center" maxW="700px" maxH = "350px" mx="auto" id="team">
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">
