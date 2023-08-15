@@ -24,7 +24,7 @@ export const BookletTable = () => {
                 planning professionals across the world, our toolkit includes:
         </Text>
         < div className = "centered-list">
-                <ul className="guideTools" style={{ listStyleType: 'disc', listStylePosition: 'inside', color: 'white', marginLeft: '10px'}}>
+                <ul className="guideTools" style={{ listStyleType: 'disc', listStylePosition: 'inside', fontSize: '18px', color: 'white', marginLeft: '10px'}}>
                 <li >Guiding principles</li>
                 <li>Case Studies</li>
                 <li>Best Practises</li>
