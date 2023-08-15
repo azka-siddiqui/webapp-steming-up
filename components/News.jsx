@@ -1,7 +1,4 @@
 import React from "react";
-import news1 from '../public/news1.png'
-import news2 from '../public/news2.png'
-import news3 from '../public/news3.png'
 
 import { Container, Box, Heading, Text, SimpleGrid, Img, Button } from "@chakra-ui/react";
 
