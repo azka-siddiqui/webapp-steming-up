@@ -78,7 +78,7 @@ export default function Home() {
                 </Text>
 
                 <Text mt="8">
-                Youth can also fill out our form about a project or idea that they would like to see implemented in their community. We will then work with our partners to help bring this vision to life alongside young people. 
+                Youth can fill out our form about a project or idea that they would like to see implemented in their community. We will then work with our partners to help bring this vision to life alongside young people. 
                 From outreach to ideation to feedback and follow-up, our program is a tangible way for youth to kickstart their journey in urban planning and make an impact in their community. We also host workshops as a helpful resource for those looking to better 
                 create liveable communities — cities for everyone.
                 </Text>
