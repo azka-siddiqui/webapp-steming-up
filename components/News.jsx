@@ -28,7 +28,7 @@ return (
 
                 <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} textAlign="right">
         <Box className="column" bg="white" p={4} maxW="300px" marginLeft="84px" minHeight="500px" display="flex" flexDirection="column" justifyContent="space-between">
-            <Img src="/news1.png" alt="News 1" display="block" style={{ marginLeft: "auto", marginRight: 25 }} />
+            <Img src="/public/static/images/news1.png" alt="News 1" display="block" style={{ marginLeft: "auto", marginRight: 25 }} />
             <div>
             <Heading as="h3" textAlign="left" color="black" fontSize="lg" mt={-10} style={{ marginLeft: "20px" }}>
                 How the highway-dependency of Canadian cities can be seen today
@@ -44,7 +44,7 @@ return (
             </div>
             </Box>
             <Box className="column" bg="white" p={4} maxW="300px" marginLeft="40px" minHeight="500px" display="flex" flexDirection="column" justifyContent="space-between">
-            <Img src="/news2.png" alt="News 2" display="block" style={{ marginLeft: "auto", marginRight: "25px", width: "350px", alignSelf: "flex-end", marginTop: "20px" }}/>
+            <Img src="/public/static/images/news2.png" alt="News 2" display="block" style={{ marginLeft: "auto", marginRight: "25px", width: "350px", alignSelf: "flex-end", marginTop: "20px" }}/>
             <div>
             <Heading as="h3" textAlign="left" color="black" fontSize="lg" mt={-12} style={{ marginLeft: "2px" }}>
             Learn how you can contribute to making your city more sustainable
@@ -60,7 +60,7 @@ return (
             </div>
             </Box>
             <Box className="column" bg="white" p={4} maxW="300px" marginLeft="-14px" minHeight="500px" display="flex" flexDirection="column" justifyContent="space-between">
-            <Img src="/news3.png" alt="News 3" display="block" style={{ marginLeft: "auto", marginRight: "25px", marginTop: "30px" }} />
+            <Img src="/public/static/images/news3.png" alt="News 3" display="block" style={{ marginLeft: "auto", marginRight: "25px", marginTop: "30px" }} />
             <div>
             <Heading as="h3" textAlign="left" color="black" fontSize="lg" mt={2} style={{ marginLeft: "10px" }}>
             It’s time to become a ‘Planner as Advocate’: Starting with Bill 23
