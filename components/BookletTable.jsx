@@ -3,6 +3,7 @@ import { Box, SimpleGrid, Heading, Text, Img, Button } from "@chakra-ui/react";
 export const BookletTable = () => {
   return (
     <SimpleGrid
+      id = "toolkit"
       columns={{ base: 1, lg: 2 }}
       spacing={4}
       alignItems="center"

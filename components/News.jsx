@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import { Container, Box, Heading, Text, SimpleGrid, Img, Button } from "@chakra-ui/react";
 
@@ -9,7 +9,7 @@ return (
     h="140vh" 
     textAlign="center"
     maxW={"8xl"}
-    id="about" 
+    id="news" 
     mt = "-190px"
     marginBottom = "-5px"
     >

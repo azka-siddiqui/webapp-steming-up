@@ -19,8 +19,8 @@ const links = [
     href: "/",
   },
   {
-    label: "Our Partners",
-    href: "#about",
+    label: "Toolkit",
+    href: "#toolkit",
   },
   {
     label: "Workshops",
@@ -28,15 +28,15 @@ const links = [
   },
   {
     label: "About",
-    href: "#team",
+    href: "#about",
   },
   {
     label: "Blog",
-    href: "#partnerships",
+    href: "#news",
   },
   {
     label: "Our Team",
-    href: "#sponsors",
+    href: "#team",
   },
   {
     label: "FAQ",
@@ -80,6 +80,13 @@ const DesktopNavContent = (props) => {
   return (
     <HStack spacing="8" align="stretch" {...props}>
       {links.map((link, index) => (
+        // <NavLink.Desktop key={index} href={link.href} fontSize="xl" fontWeight="bold" _hover={{
+        //   color: "grey",
+        // }}>
+        //       {link.label}
+        // </NavLink.Desktop>
+
+        // <motion.a key={index} whileHover={{ scale: 1.1  }}>
         <NavLink.Desktop
           key={index}
           href={link.href}
@@ -89,6 +96,7 @@ const DesktopNavContent = (props) => {
         >
           {link.label}
         </NavLink.Desktop>
+        // </motion.a>
       ))}
     </HStack>
   );

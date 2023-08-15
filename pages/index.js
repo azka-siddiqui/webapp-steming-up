@@ -105,13 +105,12 @@ export default function Home() {
 
             <MedSep />
 
-            <Box textAlign="center" maxW="700px" mx="auto" mb={14} mt="-50px">
+            <Box textAlign="center" maxW="700px" mx="auto" mb={14} mt="-50px" id="workshops">
               <Heading
                 as="h1"
                 size="3xl"
                 color="white"
                 fontWeight="bold"
-                id="workshops"
               >
                 Workshops
               </Heading>

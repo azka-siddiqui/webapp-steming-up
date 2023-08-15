@@ -1,23 +1,28 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { News } from "../components/News.jsx";
-import { Landing } from "../components/Landing.jsx"
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+import { useRouter } from "next/router";
+
+import News from "../components/News.jsx";
+import "./_app.js"
+import Home from "./index.js"
 
 // setup router
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Landing />,
+        element: <Home />,
     },
     {
-    path: "/news",
+    path: "news",
     element: <News />,
     },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+const root = ReactDOM.createRoot(documen.getElementById('root'));
+root.render(
     <RouterProvider router={router} />
-  </React.StrictMode>
 );
