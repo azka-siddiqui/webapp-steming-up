@@ -15,19 +15,19 @@ import {
 export function Landing({ children, noAnim }) {
   return (
     <Box
-      backgroundImage="url('/bkg.png')"
+      bgImage="linear-gradient(to bottom, rgba(21, 20, 38, 0.8), rgba(21, 20, 38, 0.8)), url('/bkg.png') "
       bgSize="cover"
       bgPos="center"
       bgRepeat="no-repeat"
-      h="60vh"
+      h="80vh"
     >
-      <Container maxW={"3xl"}>
+      <Container maxW={"3xl"} pt={13}>
         <Stack
           as={Box}
           textAlign={"center"}
           position="relative"
           spacing={{ base: 8, md: 5 }}
-          py={"20"}
+          py={{ base: 20, md: 36 }}
         >
           <Box display={{ sm: "none", md: "block" }}>
             <Icon
@@ -36,8 +36,8 @@ export function Landing({ children, noAnim }) {
               w={71}
               transform={"rotate(240deg)"}
               position={"absolute"}
-              right={420}
-              top={82}
+              right={400}
+              top={140}
             />
             <Text
               fontSize={"2xl"}
@@ -45,7 +45,8 @@ export function Landing({ children, noAnim }) {
               fontFamily={"Oswald"}
               position={"absolute"}
               right={480}
-              top={50}
+              fontWeight="bold"
+              top={110}
               transform={"rotate(0deg)"}
             >
               For youth, by youth
@@ -86,7 +87,14 @@ export function Landing({ children, noAnim }) {
   }}
 />
           </Heading>
-          <br/><br/>
+
+          <Text color={"white"} fontWeight="bold">
+          Creating Places. Engaging Minds.
+          </Text>
+          <Text color={"white"} fontWeight = "semibold">
+          We are creating meaningful ways for youth to shape equitable and sustainable cities.
+          </Text>
+          
 
           <Stack
             direction={"row"}
