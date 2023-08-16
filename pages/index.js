@@ -198,7 +198,7 @@ export default function Home() {
               >
                 FAQ
               </Heading>
-              <Accordion mt={8} allowMultiple defaultIndex={[0]}>
+              <Accordion mt={8} allowMultiple>
                 {FAQ.map((faq, index) => (
                   <AccordionItem key={index} color="white">
                     <AccordionButton
