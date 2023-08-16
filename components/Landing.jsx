@@ -19,15 +19,15 @@ export function Landing({ children, noAnim }) {
       bgSize="cover"
       bgPos="center"
       bgRepeat="no-repeat"
-      h="60vh"
+      h="80vh"
     >
-      <Container maxW={"3xl"}>
+      <Container maxW={"3xl"} pt={16}>
         <Stack
           as={Box}
           textAlign={"center"}
           position="relative"
           spacing={{ base: 8, md: 5 }}
-          py={"20"}
+          py={{ base: 20, md: 36 }}
         >
           <Box display={{ sm: "none", md: "block" }}>
             <Icon
@@ -36,8 +36,8 @@ export function Landing({ children, noAnim }) {
               w={71}
               transform={"rotate(240deg)"}
               position={"absolute"}
-              right={420}
-              top={82}
+              right={400}
+              top={140}
             />
             <Text
               fontSize={"2xl"}
@@ -45,23 +45,32 @@ export function Landing({ children, noAnim }) {
               fontFamily={"Oswald"}
               position={"absolute"}
               right={480}
-              top={50}
+              fontWeight="bold"
+              top={110}
               transform={"rotate(0deg)"}
             >
               For youth, by youth
             </Text>
           </Box>
           <Heading
+            fontWeight="bold"
             color="white"
             fontSize={{ base: "2xl", sm: "4xl", md: "8xl" }}
             lineHeight={"110%"}
           >
             Our
-            <Text as={"span"} color={"#32a852"} bg="white">
+            <Text as={"span"} color={"#32a852"}>
               City
             </Text>{" "}
           </Heading>
-          <br/><br/>
+
+          <Text color={"white"} fontWeight="bold">
+          Creating Places. Engaging Minds.
+          </Text>
+          <Text color={"white"} fontWeight = "semibold">
+          We are creating meaningful ways for youth to shape equitable and sustainable cities.
+          </Text>
+          
 
           <Stack
             direction={"row"}
@@ -74,7 +83,7 @@ export function Landing({ children, noAnim }) {
               color="#494949"
               as="a"
               href="https://forms.gle/ukcG7V5y4ovW4uey7"
-              bg={"#c9ac2c"}
+              bg={"#32a852"}
               px={6}
               _hover={{
                 bg: "#56d679",

@@ -48,14 +48,6 @@ export default function Home() {
         bg="rgb(21, 20, 38)"
         // bgImage="linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(255, 255, 255)) "
       >
-      <Box pt={16} textAlign="center" margin-bottom="10px">
-          <Text color={"white"} fontWeight="bold">
-          Creating Places. Engaging Minds.
-          </Text>
-          <Text color={"white"} fontWeight = "semibold">
-          We are creating meaningful ways for youth to shape equitable and sustainable cities.
-          </Text>
-      </Box>
 
         <Container maxW="container.xl" p={8}>
           <Box pt={16}>
