@@ -46,7 +46,6 @@ export default function Home() {
         bgRepeat="repeat"
         minH="40vh"
         bg="rgb(21, 20, 38)"
-        // bgImage="linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(255, 255, 255)) "
       >
 
         <Container maxW="container.xl" p={8}>

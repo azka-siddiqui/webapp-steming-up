@@ -15,7 +15,7 @@ import {
 export function Landing({ children, noAnim }) {
   return (
     <Box
-      backgroundImage="url('/bkg.png')"
+      bgImage="linear-gradient(to bottom, rgba(21, 20, 38, 0.7), rgba(21, 20, 38, 0.7)), url('/bkg.png') "
       bgSize="cover"
       bgPos="center"
       bgRepeat="no-repeat"
