@@ -26,6 +26,7 @@ import Team from "../data/team.json";
 import Sponsors from "../data/sponsors.json";
 import { BookletTable } from "../components/BookletTable";
 import FAQ from "../data/faq.json";
+
 export default function Home() {
   return (
     <>
@@ -118,6 +119,7 @@ export default function Home() {
               , and evaluate neighbourhoods from different perspectives. Additional activities include a guided walking tour of a livable neighbourhood in the city, qualitative and quantitative research, and peer-to-peer teaching."
               align="right"
             />
+
             <SmSep line={true} />
 
             <MedSep />
