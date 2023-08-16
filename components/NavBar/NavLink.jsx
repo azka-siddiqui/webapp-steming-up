@@ -6,6 +6,7 @@ const DesktopNavLink = (props) => {
         <chakra.a
             fontWeight="medium"
             display="flex"
+            color='white'
             alignItems="center"
             justifyContent="center"
             borderBottom="2px"
@@ -13,7 +14,6 @@ const DesktopNavLink = (props) => {
             transition="all 0.2s"
             _hover={{
                 borderColor: 'currentcolor',
-                color: useColorModeValue('blue.600', 'blue.200'),
             }}
             {...props}
         />
@@ -28,7 +28,7 @@ const MobileNavLink = (props) => {
             fontWeight="bold"
             py="5"
             fontSize="lg"
-            color="white"
+            color="black"
             w="full"
             _hover={{
                 bg: 'blackAlpha.200',

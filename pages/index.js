@@ -38,15 +38,25 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <link rel="logo" href="/Logo.png" />
       </Head>
-      <NavBar bg="#3B005A" />
+      <NavBar bg="#151426" />
       <Landing />
       <SignUpModal />
       <Box
         bgPos="center"
         bgRepeat="repeat"
         minH="40vh"
-        bgImage="linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(23, 0, 35)), url('/solidbkh.jpg') "
+        bg="rgb(21, 20, 38)"
+        // bgImage="linear-gradient(to top, rgba(0, 0, 0, 0.5), rgb(255, 255, 255)) "
       >
+      <Box pt={16} textAlign="center" margin-bottom="10px">
+          <Text color={"white"} fontWeight="bold">
+          Creating Places. Engaging Minds.
+          </Text>
+          <Text color={"white"} fontWeight = "semibold">
+          We are creating meaningful ways for youth to shape equitable and sustainable cities.
+          </Text>
+      </Box>
+
         <Container maxW="container.xl" p={8}>
           <Box pt={16}>
             <DetailsTable />
@@ -57,10 +67,10 @@ export default function Home() {
 
             <SmSep />
 
-            <Box textAlign="center" maxW="900px" mx="auto" id="about" mt = "100px">
-              <Heading as="h1" size="3xl" color="white" fontWeight="bold">
+            <Box  maxW="900px" mx="auto" id="about" mt = "100px" bg="#444261" padding="30px">
+              <Heading as="h1" size="3xl" color="white" fontWeight="bold" textAlign="center">
                 About{" "}
-                <Text as="span" color="#F1C232">
+                <Text as="span" color="#32a852">
                   OurCity
                 </Text>
               </Heading>
@@ -102,7 +112,7 @@ export default function Home() {
               <Heading
                 as="h1"
                 size="3xl"
-                color="white"
+                color="#c9ac2c"
                 fontWeight="bold"
                 id="workshops"
               >
@@ -149,11 +159,11 @@ export default function Home() {
                       height="200px"
                       width="200px"
                     />
-                    <Heading as="h3" size="lg" color="gray.300">
+                    <Heading as="h3" size="lg" color="#32a852">
                       {member.name}
                     </Heading>
 
-                    <Text fontSize="lg" color="gray.300">
+                    <Text fontSize="lg" color="#c9ac2c">
                       {member.desc}
                     </Text>
                   </Box>
@@ -202,7 +212,9 @@ export default function Home() {
                 {FAQ.map((faq, index) => (
                   <AccordionItem key={index} color="white">
                     <AccordionButton
-                      _expanded={{ bg: "#3B005A", color: "white" }}
+                    bg="#100f1c"
+                    _hover={{bg: "#404040"}}
+                      _expanded={{ bg: "#32a852", color: "white" }}
                     >
                       <Box flex="1" textAlign="left" fontWeight="bold">
                         {faq.question}
@@ -210,7 +222,7 @@ export default function Home() {
                       <AccordionIcon />
                     </AccordionButton>
 
-                    <AccordionPanel pb={4} color="gray.200">
+                    <AccordionPanel pb={4} color="#c9ac2c" >
                       {faq.answer}
                     </AccordionPanel>
                   </AccordionItem>

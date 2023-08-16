@@ -55,7 +55,7 @@ export const SignUpModal = () => {
                 <ModalContent>
                     <ModalHeader>
                         <Text fontWeight='black'>
-                            Subscribe to the <chakra.span color='#F1C232'>OurCity</chakra.span> newsletter!
+                            Subscribe to the <chakra.span color='#32a852'>OurCity</chakra.span> newsletter!
                         </Text>
                     </ModalHeader>
                     <ModalCloseButton />
@@ -68,7 +68,7 @@ export const SignUpModal = () => {
                         </ModalBody>
 
                         <ModalFooter justifyContent='start'>
-                            <Button bg='#3B005A' mr={3} fontSize='md' color='white' _hover={{ bg: '#28003d' }} onClick={handleSubmit}>
+                            <Button bg='#c9ac2c' mr={3} fontSize='md' color='white' _hover={{ bg: '#73631f' }} onClick={handleSubmit}>
                                 {loading && <Spinner size='sm' mr={3} />}
                                 Subscribe
                             </Button>

@@ -18,17 +18,16 @@ export function Landing({ children, noAnim }) {
       backgroundImage="url('/bkg.png')"
       bgSize="cover"
       bgPos="center"
-      bgImage="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(23, 0, 35)), url('/bkg.png') "
       bgRepeat="no-repeat"
-      h="80vh"
+      h="60vh"
     >
-      <Container maxW={"3xl"} pt={16}>
+      <Container maxW={"3xl"}>
         <Stack
           as={Box}
           textAlign={"center"}
           position="relative"
           spacing={{ base: 8, md: 5 }}
-          py={{ base: 20, md: 36 }}
+          py={"20"}
         >
           <Box display={{ sm: "none", md: "block" }}>
             <Icon
@@ -37,8 +36,8 @@ export function Landing({ children, noAnim }) {
               w={71}
               transform={"rotate(240deg)"}
               position={"absolute"}
-              right={400}
-              top={140}
+              right={420}
+              top={82}
             />
             <Text
               fontSize={"2xl"}
@@ -46,32 +45,23 @@ export function Landing({ children, noAnim }) {
               fontFamily={"Oswald"}
               position={"absolute"}
               right={480}
-              fontWeight="bold"
-              top={110}
+              top={50}
               transform={"rotate(0deg)"}
             >
               For youth, by youth
             </Text>
           </Box>
           <Heading
-            fontWeight="bold"
             color="white"
             fontSize={{ base: "2xl", sm: "4xl", md: "8xl" }}
             lineHeight={"110%"}
           >
             Our
-            <Text as={"span"} color={"#F1C232"}>
+            <Text as={"span"} color={"#32a852"} bg="white">
               City
             </Text>{" "}
           </Heading>
-
-          <Text color={"white"} fontWeight="bold">
-          Creating Places. Engaging Minds.
-          </Text>
-          <Text color={"white"} fontWeight = "semibold">
-          We are creating meaningful ways for youth to shape equitable and sustainable cities.
-          </Text>
-          
+          <br/><br/>
 
           <Stack
             direction={"row"}
@@ -84,11 +74,10 @@ export function Landing({ children, noAnim }) {
               color="#494949"
               as="a"
               href="https://forms.gle/ukcG7V5y4ovW4uey7"
-              bg={"#F1C232"}
-              rounded={"full"}
+              bg={"#c9ac2c"}
               px={6}
               _hover={{
-                bg: "#c9a228",
+                bg: "#56d679",
               }}
               target="_blank"
             >

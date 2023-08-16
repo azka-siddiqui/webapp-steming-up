@@ -17,10 +17,9 @@ import {
 export function DetailsTable ({ children, noAnim }) {
   return (
       <Box
-        backgroundImage="url('/peopletalking.jpg')"
         bgSize="cover"
         bgPos="center"
-        bgImage="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(23, 0, 35)), url('/peopletalking.jpg') "
+        bgImage="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(21, 20, 38)), url('/peopletalking.jpg') "
         bgRepeat="no-repeat"
         h="110vh"
       >
@@ -45,7 +44,7 @@ export function DetailsTable ({ children, noAnim }) {
 </Box>
 
       <Heading color="white" fontSize="5xl" mt = "-240" ml = "-8">
-        <Text as="span" color="#F1C232">
+        <Text as="span" color="#c9ac2c">
           What We Do
         </Text>
       </Heading>
@@ -65,7 +64,7 @@ export function DetailsTable ({ children, noAnim }) {
           <Text color="white" mx="auto" ml = "-14" maxWidth="300px" mt="10" fontSize="sm" textAlign="center">
           We aim to engage youth in the consultation and design phases of youth-facing projects and services for public and non-profit organizations.
           </Text>
-          <Button colorScheme="blue" mt="10" ml = "-14">
+          <Button colorScheme="green" mt="10" ml = "-14">
             Learn More
           </Button>
         </Box>
@@ -78,7 +77,7 @@ export function DetailsTable ({ children, noAnim }) {
           <Text color="white" mx="auto" ml = "-12" maxWidth="300px" mt="10" fontSize="sm" textAlign="center">
           We deliver city-building workshops for schools and youth organizations that focus on sustainability.
           </Text>
-          <Button colorScheme="blue" mt="20" ml = "-12">
+          <Button colorScheme="green" mt="20" ml = "-12">
             Learn More
           </Button>
         </Box>
@@ -91,7 +90,7 @@ export function DetailsTable ({ children, noAnim }) {
           <Text color="white" mx="auto" ml = "-12" maxWidth="300px" mt="10" fontSize="sm" textAlign="center">
           We enable high school students to lead their own community design-build projects by providing inspiration, leadership training, and project mentorship.
           </Text>
-          <Button colorScheme="blue" mt="3" ml = "-12">
+          <Button colorScheme="green" mt="3" ml = "-12">
             Learn More
           </Button>
         </Box>
