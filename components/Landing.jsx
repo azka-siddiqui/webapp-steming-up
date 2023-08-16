@@ -52,14 +52,39 @@ export function Landing({ children, noAnim }) {
             </Text>
           </Box>
           <Heading
+            fontWeight="bold"
             color="white"
             fontSize={{ base: "2xl", sm: "4xl", md: "8xl" }}
             lineHeight={"110%"}
           >
             Our
-            <Text as={"span"} color={"#32a852"} bg="white">
-              City
-            </Text>{" "}
+            <Text
+  as={"span"}
+  color={"#32a852"}
+  bg="transparent"
+  style={{
+    background: "linear-gradient(to bottom, rgba(255, 255, 255, 0.3), #F9F146)",
+    borderRadius: "20px",
+    marginLeft: "10px",
+    padding: "15px 10px",
+    position: "relative",
+    display: "center",
+  }}
+>
+  City
+</Text>{" "}
+<div
+  style={{
+    backgroundImage: "url('bkg.jpg')", // Replace with your image URL
+    backgroundSize: "cover",
+    borderRadius: "10px",
+    filter: "blur(10px)", // Apply a blur effect for a faded appearance
+    position: "relative",
+    width: "-60px", // Adjust the width as needed
+    height: "50px", // Adjust the height as needed
+    display: "inline-block",
+  }}
+/>
           </Heading>
           <br/><br/>
 
@@ -71,10 +96,12 @@ export function Landing({ children, noAnim }) {
             position={"relative"}
           >
             <Button
-              color="#494949"
+              color="white"
+              border-color = "white"
+              border-radius = "5px"
               as="a"
               href="https://forms.gle/ukcG7V5y4ovW4uey7"
-              bg={"#c9ac2c"}
+              bg={"#16537e"}
               px={6}
               _hover={{
                 bg: "#56d679",
