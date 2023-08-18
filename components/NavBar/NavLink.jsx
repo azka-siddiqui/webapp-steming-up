@@ -7,7 +7,6 @@ const DesktopNavLink = (props) => {
             fontWeight="medium"
             display="flex"
             color='white'
-            alignItems="center"
             justifyContent="center"
             borderBottom="2px"
             borderColor="transparent"

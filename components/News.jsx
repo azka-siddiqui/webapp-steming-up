@@ -5,7 +5,6 @@ import { Container, Box, Heading, Text, SimpleGrid, Img, Button } from "@chakra-
 export const News = () => {
   return (
     <Box 
-    backgroundColor = "#444261"
     h="120vh" 
     textAlign="center"
     maxW={"8xl"}

@@ -69,7 +69,7 @@ const MobileNavContent = (props) => {
 
 const DesktopNavContent = (props) => {
   return (
-    <HStack margin="auto" spacing="25px" {...props}>
+    <HStack margin="auto" spacing="60px" {...props}>
       {links.map((link, index) => (
         <NavLink.Desktop
           key={index}
