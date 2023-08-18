@@ -20,7 +20,8 @@ export const BookletTable = () => {
           </Text>{" "}
         </Heading>
         <Text color="white"fontWeight="normal" fontSize="18px" my={4}>
-        A helpful resource for planners and community engagement professionals looking to better connect with the new generation and deliver more youth-friendly outcomes
+        A helpful resource for planners and community engagement professionals looking to better connect with the new generation and deliver more youth-friendly outcomes. Drawing from the experience of urban 
+                planning professionals across the world, our toolkit includes:
         </Text>
         < div className = "centered-list">
                 <ul className="guideTools" style={{ listStyleType: 'disc', listStylePosition: 'inside', fontSize: '18px', color: 'white', marginLeft: '10px'}}>
