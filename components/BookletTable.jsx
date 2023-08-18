@@ -28,7 +28,7 @@ export const BookletTable = () => {
                 <ul className="guideTools" style={{ listStyleType: 'disc', listStylePosition: 'inside', fontSize: '18px', color: 'white', marginLeft: '10px'}}>
                 <li >Guiding principles</li>
                 <li>Case Studies</li>
-                <li>Best Practises</li>
+                <li>Best Practices</li>
                 </ul>
           </div>
 

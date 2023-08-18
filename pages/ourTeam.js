@@ -23,12 +23,6 @@ export default function teams() {
         <Head>
           <title>OurCity - Our Team</title>
           <link rel="logo" href="/Logo.png" />
-          <meta
-            property="og:description"
-            content="Sign up for the our upcoming workshop!"
-          />
-          <meta property="og:type" content="website" />
-          <link rel="logo" href="/Logo.png" />
         </Head>
 
         <NavBar bg="#151426"/>

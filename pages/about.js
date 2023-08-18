@@ -18,8 +18,6 @@ export default function about() {
             <Head>
             <title>OurCity - About</title>
             <link rel="logo" href="/Logo.png" />
-            <meta property="og:type" content="website" />
-            <link rel="logo" href="/Logo.png" />
             </Head>
 
             <NavBar bg="#151426"/>
