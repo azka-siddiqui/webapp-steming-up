@@ -109,7 +109,7 @@ export function Landing({ children, noAnim }) {
               border-radius = "5px"
               as="a"
               href="https://forms.gle/ukcG7V5y4ovW4uey7"
-              bg={"#151426"}
+              bg={"#212D71"}
               px={6}
               _hover={{
                 bg: "#56d679",

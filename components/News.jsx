@@ -6,7 +6,7 @@ export const News = () => {
   return (
     <Box 
     backgroundColor = "#444261"
-    h="140vh" 
+    h="120vh" 
     textAlign="center"
     maxW={"8xl"}
     id="news" 
