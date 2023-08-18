@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './form.css'; // Import your CSS file for styling
+import '../form/form.css'; // Import your CSS file for styling
 
 const YourFormComponent = () => {
   const [submissionType, setSubmissionType] = useState('text');
