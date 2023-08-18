@@ -9,9 +9,7 @@ import {
   Img,
   Button,
   Container,
-  Stack,
-  Icon,
-  createIcon,
+  Stack
 } from "@chakra-ui/react";
 
 export function DetailsTable ({ children, noAnim }) {
@@ -19,7 +17,7 @@ export function DetailsTable ({ children, noAnim }) {
       <Box
         bgSize="cover"
         bgPos="center"
-        bgImage="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(21, 20, 38)), url('/peopletalking.jpg') "
+        bgImage="linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(21, 20, 38)), url('/peopletalking.jpg') "
         bgRepeat="no-repeat"
         h="110vh"
       >
@@ -28,22 +26,9 @@ export function DetailsTable ({ children, noAnim }) {
             as={Box}
             textAlign={"center"}
             position="relative"
-            spacing={{ base: 8, md:15 }}
-            py={{ base: 20, md: 68 }}
           >
-            <Box display={{ sm: "none", md: "block" }}>
-              <Icon
-                color="green.100"
-                w={71}
-                transform={"rotate(240deg)"}
-                position={"absolute"}
-                right={400}
-                top={140}
-              />
 
-</Box>
-
-      <Heading color="white" fontSize="5xl" mt = "-240" ml = "-8">
+      <Heading color="white" fontSize="5xl">
         <Text as="span" color="#c9ac2c">
           What We Do
         </Text>

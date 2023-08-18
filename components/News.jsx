@@ -14,9 +14,9 @@ export const News = () => {
     marginBottom = "-5px"
     >
 
-      <Container maxW="container.xl" p={8}>
+      <Container maxW="container.xl" pt={8}>
 
-        <Box className="basicText" textAlign="center" mb={8} mt={8}>
+        <Box className="basicText" textAlign="center">
           <Heading as="h3" color="white">
             News &amp; Views
           </Heading>
@@ -27,7 +27,7 @@ export const News = () => {
 
       </Container>
 
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} textAlign="right" margin="30px">
+      <SimpleGrid columns={{md: 3 }} spacing={8} textAlign="right" margin="30px">
         <Box className="column" bg="white" p={4}  display="flex" flexDirection="column" justifyContent="space-between">
           <Img src="/news1.png" display="block" style={{width: "350px", height: "160px", alignSelf: "flex-end"}}/>
           <div>
@@ -80,10 +80,10 @@ export const News = () => {
       </SimpleGrid>
 
       <Box textAlign="center" mt={8}>
-        <Button className="basicText" colorScheme="blue" size="lg" backgroundColor = "SeaGreen" color = "white" border-color = "black" border-radius = "5px">
+        <Button className="basicText" colorScheme="blue" size="lg" backgroundColor = "SeaGreen" color = "white" border-radius = "5px">
           Visit Our Blog
         </Button>
-        <Text className="basicText" fontSize="16px" mt={2} color = "white" font-face = "Times New Roman">
+        <Text className="basicText" fontSize="16px" mt={2} color = "white">
           For more stories from our team.
         </Text>
       </Box>
