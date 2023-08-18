@@ -1,6 +1,3 @@
-import { motion } from "framer-motion";
-import Head from "next/head";
-
 import {
   Box,
   SimpleGrid,
@@ -35,11 +32,10 @@ export function DetailsTable ({ children, noAnim }) {
       </Heading>
 
       <SimpleGrid
-        columns={{ base: 1, md: 3 }}
+        columns={{ md: 3 }}
         spacing={40} 
-        mt="-20"
         maxW="1200px"
-        mx="auto"
+        marginLeft="30px"
       >
         <Box mt = "10">
           <Img src="/image1.png" alt="Image 1" />

@@ -7,6 +7,7 @@ export const BookletTable = () => {
       spacing={4}
       alignItems="center"
       justifyContent="center"
+      marginRight="30px"
       
     >
       <Box>

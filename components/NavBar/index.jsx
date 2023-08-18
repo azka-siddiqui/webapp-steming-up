@@ -31,26 +31,25 @@ export const NavBar = ({ bg }) => (
           justify="space-between"
           height="100%"
         >
-          <motion.a href="/" whileHover={{ scale: 1.1 }}>
-            <Box alignItems="center" d="flex">
-              <Img
-                src="/Layer_1.png"
-                h="9"
-                display="inline"
-                mr="3"
-                alignSelf="center"
-              />
-              <Text
-                as="h1"
-                fontSize="xl"
-                fontWeight="extrabold"
-                maxW="48rem"
-                display="inline"
-              >
-                OurCity
-              </Text>
-            </Box>
-          </motion.a>
+          
+          <Box alignItems="center" d="flex">
+            <Img
+              src="/Layer_1.png"
+              h="9"
+              display="inline"
+              mr="3"
+              alignSelf="center"
+            />
+            <Text
+              as="h1"
+              fontSize="xl"
+              fontWeight="extrabold"
+              maxW="48rem"
+              display="inline"
+            >
+              OurCity
+            </Text>
+          </Box>
 
           <NavContent.Desktop
             display={{

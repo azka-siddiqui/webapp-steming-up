@@ -11,7 +11,6 @@ import { HiOutlineMenu, HiX } from "react-icons/hi";
 import { NavLink } from "./NavLink";
 import { NavList } from "./NavList";
 import { NavListItem } from "./NavListItem";
-import { motion } from "framer-motion";
 
 const links = [
   {
@@ -19,28 +18,20 @@ const links = [
     href: "/",
   },
   {
-    label: "Our Partners",
-    href: "#about",
-  },
-  {
     label: "Workshops",
-    href: "#workshops",
+    href: "/workshops",
   },
   {
     label: "About",
-    href: "#team",
-  },
-  {
-    label: "Blog",
-    href: "#partnerships",
+    href: "/about",
   },
   {
     label: "Our Team",
-    href: "#sponsors",
+    href: "/ourTeam",
   },
   {
     label: "FAQ",
-    href: "#faq",
+    href: "/faq",
   },
 ];
 
