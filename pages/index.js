@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Landing } from "../components/Landing";
+import { News } from "../components/News";
 import { DetailsTable } from "../components/DetailsTable";
 import {
   Box,
@@ -59,7 +60,7 @@ export default function Home() {
             <SmSep />
 
             <Box  maxW="900px" mx="auto" id="about" mt = "100px" bg="#444261" padding="30px">
-              <Heading as="h1" size="3xl" color="white" fontWeight="bold" textAlign="center">
+              <Heading as="h1" size="3xl" color = "white" fontWeight="bold" textAlign="center">
                 About{" "}
                 <Text as="span" color="#32a852">
                   OurCity
@@ -132,6 +133,12 @@ export default function Home() {
 
             <MedSep />
 
+            <SmSep />
+
+            <News />
+
+            <SmSep line={true} />
+
             <Box textAlign="center" maxW="700px" maxH = "350px" mx="auto" id="team">
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">
                 Meet the Team
@@ -188,7 +195,6 @@ export default function Home() {
             <MedSep />
 
             <MedSep />
-
             <Box maxW="700px" mx="auto" id="faq">
               <Heading
                 as="h1"
@@ -199,13 +205,11 @@ export default function Home() {
               >
                 FAQ
               </Heading>
-              <Accordion mt={8} allowMultiple defaultIndex={[0]}>
+              <Accordion mt={8} allowMultiple>
                 {FAQ.map((faq, index) => (
                   <AccordionItem key={index} color="white">
                     <AccordionButton
-                    bg="#100f1c"
-                    _hover={{bg: "#404040"}}
-                      _expanded={{ bg: "#32a852", color: "white" }}
+                      _expanded={{ bg: "#3B005A", color: "white" }}
                     >
                       <Box flex="1" textAlign="left" fontWeight="bold">
                         {faq.question}
@@ -213,7 +217,7 @@ export default function Home() {
                       <AccordionIcon />
                     </AccordionButton>
 
-                    <AccordionPanel pb={4} color="#c9ac2c" >
+                    <AccordionPanel pb={4} color="gray.200">
                       {faq.answer}
                     </AccordionPanel>
                   </AccordionItem>
