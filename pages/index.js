@@ -24,6 +24,7 @@ import { Footer } from "../components/Footer";
 import Team from "../data/team.json";
 import Sponsors from "../data/sponsors.json";
 import { BookletTable } from "../components/BookletTable";
+import Form from "../form/form.jsx";
 import FAQ from "../data/faq.json";
 export default function Home() {
   return (
@@ -130,6 +131,7 @@ export default function Home() {
             <SmSep line={true} />
 
             <MedSep />
+              <Form />
 
             <Box textAlign="center" maxW="700px" maxH = "350px" mx="auto" id="team">
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">
