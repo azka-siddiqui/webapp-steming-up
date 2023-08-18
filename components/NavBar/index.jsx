@@ -1,7 +1,6 @@
 import { Box, Flex, Text, Img } from "@chakra-ui/react";
 import * as React from "react";
 import { NavContent } from "./NavContent";
-import { motion } from "framer-motion";
 
 export const NavBar = ({ bg }) => (
   <Box
