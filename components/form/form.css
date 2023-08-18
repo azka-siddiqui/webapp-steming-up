@@ -1,15 +1,26 @@
 
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .form-container {
-  background-color: purple;
-  color: white;
+  background-color: #fff;
+  color: #333;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
 }
 
 .form-title {
-  color: yellow;
+  color: #8c59a5;
   margin-bottom: 20px;
 }
 
@@ -28,20 +39,33 @@ select,
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid gray;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 textarea {
   resize: vertical;
 }
 
+#videoUploadGroup {
+  display: none;
+}
+
 .submit-button {
-  background-color: yellow;
-  color: black;
+  background-color: #8c59a5;
+  color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
 }
 
+#termsAndConditionsLabel {
+  font-size: 12px;
+}
+
+#termsAndConditionsCheckbox {
+  margin-right: 5px;
+}
