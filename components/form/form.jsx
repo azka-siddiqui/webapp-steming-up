@@ -25,7 +25,8 @@ const YourFormComponent = () => {
 
   return (
     <div className="form-container">
-      <h1 className="form-title">Sustainable City Ideas Form</h1>
+     <h1 class="form-title">Get started here</h1>
+    <h2 style="font-size: 15px; color: grey;"> Fill out our innovation form</h2>
       <form className="idea-form" onSubmit={handleSubmit}>
         <div className="input-group">
           <label htmlFor="firstName">First Name:</label>
