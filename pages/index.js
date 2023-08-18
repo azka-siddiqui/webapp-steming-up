@@ -209,7 +209,7 @@ export default function Home() {
                 {FAQ.map((faq, index) => (
                   <AccordionItem key={index} color="white">
                     <AccordionButton
-                      _expanded={{ bg: "#3B005A", color: "white" }}
+                      _expanded={{ bg: "#32a852", color: "black" }}
                     >
                       <Box flex="1" textAlign="left" fontWeight="bold">
                         {faq.question}
