@@ -8,12 +8,16 @@ import {
     Text
   } from "@chakra-ui/react";
 
-export default function about() {
+  export default function about() {
     return (
         <Box
         bgPos="center"
         bgRepeat="repeat"
-        minH="40vh"
+        minH="100vh" // Adjust min height for full page coverage
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
         bg="rgb(21, 20, 38)">
             <Head>
             <title>OurCity - About</title>
@@ -22,7 +26,7 @@ export default function about() {
 
             <NavBar bg="#151426"/>
 
-            <Box textAlign = "center" maxW="1000px" mx="auto" id="about" mt = "30px" bg="#444261" padding="30px" margin="30px">
+            <Box textAlign = "center" maxW="1000px" id="about" mt = "30px" bg="#444261" padding="30px" margin="30px">
                 
                 <Heading as="h1" size="3xl" color = "white" fontWeight="bold" textAlign="center">
                 About{" "}
@@ -43,7 +47,7 @@ export default function about() {
                     <Text mt="8">
                     Youth can fill out our form about a project or idea that they would like to see implemented in their community. We will then work with our partners to help bring this vision to life alongside young people. 
                     From outreach to ideation to feedback and follow-up, our program is a tangible way for youth to kickstart their journey in urban planning and make an impact in their community. We also host workshops as a helpful resource for those looking to better 
-                    create liveable communities — cities for everyone.
+                    create livable communities — cities for everyone.
                     </Text>
                         
                 </Box>
