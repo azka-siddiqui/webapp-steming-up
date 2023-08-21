@@ -23,6 +23,7 @@ export function DetailsTable ({ children, noAnim }) {
             as={Box}
             textAlign={"center"}
             position="relative"
+            mt="10"
           >
 
       <Heading color="white" fontSize="5xl">

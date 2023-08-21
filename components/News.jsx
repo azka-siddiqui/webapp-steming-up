@@ -9,7 +9,7 @@ export const News = () => {
     textAlign="center"
     maxW={"8xl"}
     id="news" 
-    mt = "-190px"
+    mt = ""
     marginBottom = "-5px"
     >
 
