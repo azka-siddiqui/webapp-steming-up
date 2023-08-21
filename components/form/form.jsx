@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../form/form.css'; // Import your CSS file for styling
+import '../form/form.css'; 
 
-const YourFormComponent = () => {
+const Form = () => {
   const [submissionType, setSubmissionType] = useState('text');
   const [file, setFile] = useState(null);
   const [idea, setIdea] = useState('');
@@ -20,7 +20,7 @@ const YourFormComponent = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission here
+    
   };
 
   return (
@@ -70,7 +70,11 @@ const YourFormComponent = () => {
           <select id="areaOfFocus" name="areaOfFocus">
             <option value="transportation">Transportation and Energy</option>
             <option value="greenBuildings">Green Buildings</option>
-            {/* Add more options here */}
+            <option value="waterconservation"> Water Conservation</option>
+            <option value=""> </option>
+            <option value=""> </option>
+            <option value=""> </option>
+   
           </select>
         </div>
 
@@ -94,5 +98,5 @@ const YourFormComponent = () => {
   );
 };
 
-export default YourFormComponent;
+export default Form;
 
