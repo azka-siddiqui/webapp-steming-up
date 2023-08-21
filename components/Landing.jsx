@@ -62,7 +62,6 @@ export function Landing({ children, noAnim }) {
             <Text
   as={"span"}
   color={"#32a852"}
-  bg="transparent"
   style={{
     background: "linear-gradient(to bottom, rgba(255, 255, 255, 0.3), #F9F146)",
     borderRadius: "20px",
@@ -76,13 +75,12 @@ export function Landing({ children, noAnim }) {
 </Text>{" "}
 <div
   style={{
-    backgroundImage: "url('bkg.jpg')", // Replace with your image URL
+    backgroundImage: "url('bkg.jpg')", 
     backgroundSize: "cover",
     borderRadius: "10px",
-    filter: "blur(10px)", // Apply a blur effect for a faded appearance
     position: "relative",
-    width: "-60px", // Adjust the width as needed
-    height: "50px", // Adjust the height as needed
+    width: "-60px", 
+    height: "50px", 
     display: "inline-block",
   }}
 />
