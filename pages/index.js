@@ -20,7 +20,9 @@ export default function Home() {
       </Head>
       <NavBar bg="#151426" />
       <Landing />
+      
       <SignUpModal />
+
       <Box
         bgPos="center"
         bgRepeat="repeat"
@@ -28,7 +30,7 @@ export default function Home() {
         bg="rgb(21, 20, 38)"
       >
 
-        <Container maxW="container.xl" p={8}>
+        <Container maxW="100%" p={8}>
           <Box pt={16}>
             <DetailsTable />
 

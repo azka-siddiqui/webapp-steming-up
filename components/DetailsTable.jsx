@@ -6,7 +6,8 @@ import {
   Img,
   Button,
   Container,
-  Stack
+  Stack,
+  Link
 } from "@chakra-ui/react";
 
 export function DetailsTable ({ children, noAnim }) {
@@ -35,7 +36,7 @@ export function DetailsTable ({ children, noAnim }) {
       <SimpleGrid
         columns={{ md: 3 }}
         spacing={40} 
-        maxW="1200px"
+        maxW="100%"
         marginLeft="30px"
       >
         <Box mt = "10">
