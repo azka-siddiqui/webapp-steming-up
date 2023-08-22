@@ -18,10 +18,7 @@ const Form = () => {
     setIdea(event.target.value);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    //  form submission 
-  };
+  
 
   return (
     <div className="form-container">
