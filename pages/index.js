@@ -24,7 +24,7 @@ import { Footer } from "../components/Footer";
 import Team from "../data/team.json";
 import Sponsors from "../data/sponsors.json";
 import { BookletTable } from "../components/BookletTable";
-import Form from "../form/form.jsx";
+import Form from "../components/form/form.jsx";
 import FAQ from "../data/faq.json";
 export default function Home() {
   return (
