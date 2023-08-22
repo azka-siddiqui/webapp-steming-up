@@ -16,7 +16,7 @@ import {
 // import useState
 import { useState, useEffect } from 'react'
 export const SignUpModal = () => {
-
+    // const { isOpen, onOpen, onClose } = useDisclosure()
     const [showModal, setShowModal] = useState(false);
     const [loading, setLoading] = useState(false);
     const [submitted, setSubmitted] = useState(false);
@@ -55,7 +55,7 @@ export const SignUpModal = () => {
                 <ModalContent>
                     <ModalHeader>
                         <Text fontWeight='black'>
-                            Subscribe to the <chakra.span color='#32a852'>Our&apos;City</chakra.span> newsletter!
+                            Subscribe to the <chakra.span color='#32a852'>OurCity</chakra.span> newsletter!
                         </Text>
                     </ModalHeader>
                     <ModalCloseButton />
@@ -63,7 +63,7 @@ export const SignUpModal = () => {
                         <ModalBody>
                             <FormControl isRequired>
                                 <Input id='email' placeholder='e.g. example@example.com' />
-                                <FormHelperText ml='1'>We promise it's an email worth reading.</FormHelperText>
+                                <FormHelperText ml='1'>We promise its an email worth reading.</FormHelperText>
                             </FormControl>
                         </ModalBody>
 
