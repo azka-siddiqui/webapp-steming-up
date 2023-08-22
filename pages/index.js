@@ -10,7 +10,7 @@ import { SignUpModal } from "../components/SignUpModal";
 import { NavBar } from "../components/NavBar";
 import { SmSep } from "../components/SmSep";
 import { Footer } from "../components/Footer";
-import { Form } from "../components/form.jsx";
+import { NewForm } from "../components/NewForm";
 export default function Home() {
   return (
     <>
@@ -41,7 +41,7 @@ export default function Home() {
 
             <SmSep />
 
-            <Form />
+            <NewForm />
 
             <Footer />
           </Box>

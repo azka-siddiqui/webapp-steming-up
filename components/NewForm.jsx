@@ -15,7 +15,7 @@ import { Formik, Form } from 'formik';
 import { useState } from 'react';
 
 
-export const Form = (props) => {
+export const NewForm = (props) => {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
