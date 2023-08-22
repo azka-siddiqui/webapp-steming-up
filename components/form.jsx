@@ -1,99 +1,114 @@
-import React, { useState } from 'react';
+import {
+  FormControl,
+  Text,
+  SimpleGrid,
+  Input,
+  Img,
+  VStack,
+  StackDivider,
+  Textarea,
+  Button,
+  Spinner,
+  Box,
+} from '@chakra-ui/react'
+import { Formik, Form } from 'formik';
+import { useState } from 'react';
 
-const Form = () => {
-  const [submissionType, setSubmissionType] = useState('text');
-  const [file, setFile] = useState(null);
-  const [idea, setIdea] = useState('');
 
-  const handleSubmissionTypeChange = (event) => {
-    setSubmissionType(event.target.value);
-  };
+export const Form = (props) => {
 
-  const handleFileChange = (event) => {
-    setFile(event.target.files[0]);
-  };
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleIdeaChange = (event) => {
-    setIdea(event.target.value);
-  };
+  const handleSubmit = async (event) => {
+      event.preventDefault();
+      setIsLoading(true);
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+      let message = document.getElementById('message').value;
+      let subject = document.getElementById('subject').value;
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+      const resp = await fetch('/api/sendEmail', {
+          method: 'POST',
+          body: JSON.stringify({
+              name,
+              email,
+              message,
+              subject
+          }),
+      });
+      const data = await resp.json()
+      if (data.accepted) {
+          setIsSubmitted(true);
+      }
+      else {
+          try {
+              document.getElementById('error').style.display = 'block';
+          }
+          catch (e) {
+              console.log(e);
+          }
+
+      }
+      setIsLoading(false);
 
   };
 
   return (
-    <div style={{
-      fontFamily: 'Arial, sans-serif',
-      backgroundColor: '#f0f0f0',
-      margin: 0,
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh',
-    }}>
-      <div style={{
-        backgroundColor: '#fff',
-        color: '#333',
-        padding: '20px',
-        borderRadius: '10px',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)',
-        width: '400px',
-      }}>
-        <h1 style={{ color: '#8c59a5', marginBottom: '20px' }}>Get started here</h1>
-        <h2 style={{ fontSize: '15px', color: 'grey' }}>Fill out our innovation form</h2>
-        <form onSubmit={handleSubmit}>
+      <>
+          <HeadingWithDesc desc="Any additional questions? Fill out this form!">
+              Contact Us
+          </HeadingWithDesc>
+          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20} mx="auto" textAlign="center" justifyContent="center" alignItems="center">
+              <Box mx="auto" w="100%">
+                  {!isSubmitted && <Formik
+                      initialValues={{ name: 'Sasuke' }}
+                      onSubmit={(values, actions) => {
+                          setTimeout(() => {
+                              alert(JSON.stringify(values, null, 2))
+                              actions.setSubmitting(false)
+                          }, 1000)
+                      }}
+                  >
+                      <Form onSubmit={handleSubmit}>
+                          <VStack
+                              divider={<StackDivider borderColor='gray.200' />}
+                              spacing={4}
+                              align='stretch'
+                          >
+                              <FormControl isRequired borderRadius="20" color="gray.900">
+                                  <Input id='name' placeholder='Name' color="gray.900" />
+                              </FormControl>
 
-          <div style={{ marginBottom: '20px' }}>
-            <label htmlFor="areaOfFocus">Area of Focus:</label>
-            <select id="areaOfFocus" name="areaOfFocus" style={{
-              width: '100%',
-              padding: '10px',
-              border: '1px solid #ccc',
-              borderRadius: '5px',
-              fontSize: '14px',
-            }}>
-              <option value="transportation">Transportation and Energy</option>
-              <option value="greenBuildings">Green Buildings</option>
-              <option value="waterconservation">Water Conservation</option>
-              
-            </select>
-          </div>
+                              <FormControl isRequired borderRadius="20" color="gray.900">
+                                  <Input id='email' type="email" placeholder='Email' color="gray.900" />
+                              </FormControl>
 
-          <div style={{ marginBottom: '20px' }}>
-            <label htmlFor="potentialImpact">Potential Impact:</label>
-            <textarea id="potentialImpact" name="potentialImpact" rows="4" required style={{
-              width: '100%',
-              padding: '10px',
-              border: '1px solid #ccc',
-              borderRadius: '5px',
-              fontSize: '14px',
-              resize: 'vertical',
-            }} />
-          </div>
 
-          <div style={{ marginBottom: '20px' }}>
-            <label htmlFor="termsAndConditions">
-              <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required style={{ marginRight: '5px' }} />
-              I agree to the terms and conditions
-            </label>
-          </div>
+                              <FormControl isRequired borderRadius="20" color="gray.900">
+                                  <Input id='subject' placeholder='Subject' color="gray.900" />
+                              </FormControl>
+                              <FormControl isRequired borderRadius="20" color="gray.900">
+                                  <Textarea placeholder='Message' rows="5" id="message" />
+                              </FormControl>
 
-          <button type="submit" style={{
-            backgroundColor: '#8c59a5',
-            color: '#fff',
-            padding: '10px 20px',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            fontSize: '14px',
-          }}>
-            Submit Idea
-          </button>
-        </form>
-      </div>
-    </div>
-  );
-};
+                              <Button color="white" bg="blue.light" _hover={{ bg: "blue.dark" }} type="submit">
+                                  {isLoading && <Spinner mr='2' />}
+                                  Submit</Button>
+                          </VStack>
+                          <Text bg='red.100' mt='4' p='1' rounded='lg' d='none' id='error'>There was an error, please refresh the page and try again!</Text>
+                      </Form>
+                  </Formik>}
 
-export default Form;
+                  {isSubmitted && <Text bg='blue.light' color='white' p='1' rounded='lg' fontSize="xl">We have received for your message! We will get back to you as soon as possible!</Text>}
+              </Box>
+
+              <Box mx="auto" d={{ base: 'none', md: 'block' }}>
+                  <Img src="/logo_no_small.png" alt="pic" maxH="450px" />
+              </Box>
+          </SimpleGrid >
+
+      </>
+
+  )
+}
