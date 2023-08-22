@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react'
 import { Formik, Form } from 'formik';
 import { useState } from 'react';
+import { HeadingWithDesc } from '../components/HeadingWithDesc';
 
 
 export const NewForm = (props) => {
