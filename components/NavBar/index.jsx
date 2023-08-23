@@ -10,6 +10,7 @@ export const NavBar = ({ bg }) => (
     position="sticky"
     top="0"
     zIndex="100"
+    width="100%"
   >
     <Box as="header" height="16" position="relative" color="white">
       <Box

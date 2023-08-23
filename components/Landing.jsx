@@ -1,6 +1,3 @@
-import { motion } from "framer-motion";
-import Head from "next/head";
-
 import {
   Box,
   Heading,
@@ -92,8 +89,6 @@ export function Landing({ children, noAnim }) {
           <Text color={"white"} fontWeight = "semibold">
           We are creating meaningful ways for youth to shape equitable and sustainable cities.
           </Text>
-          
-
           <Stack
             direction={"row"}
             spacing={3}
@@ -106,7 +101,7 @@ export function Landing({ children, noAnim }) {
               border-color = "white"
               border-radius = "5px"
               as="a"
-              href="https://forms.gle/ukcG7V5y4ovW4uey7"
+              href="/form"
               bg={"#212D71"}
               px={6}
               _hover={{

@@ -14,10 +14,7 @@ import {
   Checkbox,
 } from '@chakra-ui/react'
 import { Formik, Form } from 'formik';
-import Head from "next/head";
 import { useState } from 'react';
-import { HeadingWithDesc } from '../components/HeadingWithDesc';
-
 
 export const NewForm = (props) => {
 
@@ -65,6 +62,7 @@ export const NewForm = (props) => {
     fontSize: '30px', 
     color: 'white',
     textAlign: "center", 
+    fontWeight: "600",
     fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
   };
 
@@ -188,12 +186,12 @@ export const NewForm = (props) => {
         </Box>
 
         <Box mx="auto" d={{ base: 'none', md: 'block' }}>
-                    <Img src="/formPhoto.png" alt="pic" maxH="450px" />
-                </Box>
+          <Img src="/formPhoto.png" alt="pic" maxH="450px" />
+        </Box>
 
       <Button
         color="white"
-        bg={"#212D71"}
+        bg={"#32a852"}
         border-color = "white"
         border-radius = "5px"
         as="a"

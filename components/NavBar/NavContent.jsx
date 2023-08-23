@@ -32,7 +32,7 @@ const links = [
   {
     label: "FAQ",
     href: "/faq",
-  },
+  }
 ];
 
 
