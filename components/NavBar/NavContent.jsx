@@ -26,8 +26,8 @@ const links = [
     href: "/about",
   },
   {
-    label: "Our Team",
-    href: "/ourTeam",
+    label: "Sponsors",
+    href: "/ourSponsors",
   },
   {
     label: "FAQ",

@@ -2,7 +2,8 @@ import Head from "next/head";
 import { Landing } from "../components/Landing";
 import { News } from "../components/News";
 import { DetailsTable } from "../components/DetailsTable";
-import { NewForm } from "../components/NewForm";
+import { OurTeam } from "../components/OurTeam";
+import React from "react" 
 import {
   Box,
   Container
@@ -12,6 +13,7 @@ import { NavBar } from "../components/NavBar";
 import { SmSep } from "../components/SmSep";
 import { Footer } from "../components/Footer";
 export default function Home() {
+  React.useLayoutEffect = React.useEffect 
   return (
     <>
       <Head>
@@ -35,13 +37,13 @@ export default function Home() {
           <Box pt={16}>
             <DetailsTable />
 
-            <SmSep />
+            <SmSep/>
 
-            <News />
+            <News/>
 
-           <SmSep />
+            <SmSep/>
 
-            <NewForm />
+            <OurTeam/>
 
             <Footer />
           </Box>
