@@ -38,6 +38,10 @@ export default function Home() {
 
             <News />
 
+           <SmSep />
+
+            <NewForm />
+
             <Footer />
           </Box>
         </Container>
