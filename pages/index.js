@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Landing } from "../components/Landing";
 import { News } from "../components/News";
 import { DetailsTable } from "../components/DetailsTable";
+import { NewForm } from "../components/NewForm";
 import {
   Box,
   Container
