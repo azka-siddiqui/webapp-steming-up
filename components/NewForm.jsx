@@ -24,8 +24,8 @@ export const NewForm = (props) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const [submissionType, setSubmissionType] = useState('text');
-  const [areaOfFocus, setAreaofFocus] = useState('transportation');
+  const [submissionType, setSubmissionType] = useState('submissionType');
+  const [areaOfFocus, setAreaofFocus] = useState('areaOfFocus');
 
   const handleSubmit = async (event) => {
       event.preventDefault();
@@ -76,7 +76,9 @@ export const NewForm = (props) => {
   };
 
   return (
-    <>
+    <Box 
+    id="form" 
+    >
       <div>
         <header style={headerStyle}>Innovation Form</header>
         <p style={{ ...paragraphStyle, marginBottom: '30px' }}>Fill out this form to submit an idea for a sustainability initiative in your community!</p>
@@ -88,8 +90,8 @@ export const NewForm = (props) => {
             <Formik
               initialValues={{
                 name: 'Sasuke',
-                submissionType: 'text',
-                areaOfFocus: 'transportation',
+                submissionType: 'submissionType',
+                areaOfFocus: 'areaOfFocus',
                 potentialImpact: '',
                 message: '',
                 agreeToTerms: false,
@@ -207,6 +209,6 @@ export const NewForm = (props) => {
       </Button>
 
       </SimpleGrid>
-    </>
+    </Box>
   );
 };
