@@ -15,7 +15,7 @@ export const TwoColWithPic = ({ img, title, desc, align }) => {
     if (align === 'right') {
         return (
             <>
-                <SimpleGrid columns={{ base: 1, md: 2 }} spacing='40px' alignItems='center' justifyContent='center' bg='#100f1c' padding='20px' margin="30px">
+                <SimpleGrid columns={{ base: 1, md: 2 }} spacing='40px' alignItems='center' justifyContent='center' bg='#444261' padding='20px' margin="30px">
                     <Box>
                         <Img src={img} alt={title} maxH='400px' mx='auto' />
                     </Box>
@@ -32,7 +32,7 @@ export const TwoColWithPic = ({ img, title, desc, align }) => {
     else {
         return (
             <>
-                <SimpleGrid columns={{ base: 1, md: 2 }} spacing='40px' alignItems='center' justifyContent='center' bg='#100f1c' padding='20px' margin="30px">
+                <SimpleGrid columns={{ base: 1, md: 2 }} spacing='40px' alignItems='center' justifyContent='center' bg='#444261' padding='20px' margin="30px">
                     <Box>
                         <Text fontSize='3xl' as='h1' fontWeight='bold' color='#32a852'>
                             {title}

@@ -27,7 +27,7 @@ export default function teams() {
 
         <NavBar bg="#151426"/>
 
-        <Box textAlign="center" maxW="700px" maxH = "350px" mx="auto" marginBottom="10%">
+        <Box textAlign="center" maxW="75%" maxH = "100%" mx="auto" marginBottom="5%" bg="#444261" padding="20px">
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">
                 Meet the Team
               </Heading>
@@ -36,6 +36,7 @@ export default function teams() {
                 columns={{ base: 1, md: 2, lg: 3 }}
                 spacing={20}
                 mt={12}
+                ml={-3}
               >
                 {Team.map((member) => (
                   <Box key={member.name}>
@@ -58,7 +59,7 @@ export default function teams() {
             </Box>
 
 
-            <Box textAlign="center" maxW="700px" maxH = "150px" mx="auto" marginBottom="20%">
+            <Box textAlign="center" maxW="75%" maxH = "100%" mx="auto" marginBottom="5%" bg="#444261" padding="20px">
               <Heading as="h1" size="3xl" color="white" fontWeight="bold">
                 Sponsors
               </Heading>
@@ -71,7 +72,7 @@ export default function teams() {
                 {Sponsors.map((logo, index) => (
                   <Box key={index} as="a" target="_blank" href={logo.link}>
                     <Img src={logo.img} alt={logo.name} size="3xl" />
-                    <Text mt={2} fontSize="xl" color="white">
+                    <Text mt={2} fontSize="xl" color="#c9ac2c">
                       {logo.name}
                     </Text>
                   </Box>

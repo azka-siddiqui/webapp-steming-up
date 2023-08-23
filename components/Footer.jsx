@@ -9,9 +9,9 @@ import { IoLogoTiktok } from "react-icons/io5";
 export const Footer = () => {
   return (
     <>
-      <Divider mt={20} borderColor="gray.100" />
+      <Divider mt={20} borderColor="gray.100"/>
 
-      <Box textAlign="center" fontSize="4xl" mt={4}>
+      <Box textAlign="center" fontSize="4xl" mt={4} bg="rgb(21, 20, 38)">
         <Link href="mailto:stemingup@gmail.com" isExternal mr={5}>
           <Icon
             as={AiOutlineMail}
