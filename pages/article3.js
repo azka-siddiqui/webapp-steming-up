@@ -2,11 +2,12 @@ import Head from "next/head";
 import { NavBar } from "../components/NavBar";
 import { Footer } from "../components/Footer";
 import {SmSep} from "../components/SmSep"
+import {SignUpModal} from "../components/SignUpModal"
+
 import {
     Box,
     Heading,
-    Text,
-    Img
+    Text
   } from "@chakra-ui/react";
 
   export default function form() {
@@ -26,6 +27,8 @@ import {
             </Head>
 
             <NavBar bg="#151426"/>
+
+            <SignUpModal/>
 
             <Box maxW="1000px" id="about" mt = "30px" bg="white" padding="30px" margin="30px">
                 <Box mt={10} margin="10px" textAlign="center">
