@@ -28,24 +28,7 @@ export const SignUpModal = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
-        let email = document.getElementById('email').value;
-
-        const resp = await fetch('/api/subscribe', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                email
-            })
-        })
-
-        const data = await resp.json();
-
-        if (data.accepted) {
-            setSubmitted(true);
-        }
-        setLoading(false);
+        setSubmitted(true);
     }
 
     return (
