@@ -176,6 +176,10 @@ export const NewForm = (props) => {
                         <option value="transportation">Transportation and Energy</option>
                         <option value="greenBuildings">Green Buildings</option>
                         <option value="waterconservation">Water Conservation</option>
+                        <option value="wasteReduction"> Waste Reduction</option>
+                        <option value="renewableEnergy"> Renewable Energy </option>
+                        <option value="communityEngagement"> Community Engagement</option>
+                        <option value="other"> Other</option>
                     </Select>
                     </FormControl>
 
