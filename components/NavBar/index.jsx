@@ -1,7 +1,6 @@
 import { Box, Flex, Text, Img } from "@chakra-ui/react";
 import * as React from "react";
-import { NavContent } from "./NavContent";
-import { motion } from "framer-motion";
+import { DesktopNavContent } from "./NavContent";
 
 export const NavBar = ({ bg }) => (
   <Box
@@ -11,6 +10,7 @@ export const NavBar = ({ bg }) => (
     position="sticky"
     top="0"
     zIndex="100"
+    width="100%"
   >
     <Box as="header" height="16" position="relative" color="white">
       <Box
@@ -31,37 +31,30 @@ export const NavBar = ({ bg }) => (
           justify="space-between"
           height="100%"
         >
-          <motion.a href="/" whileHover={{ scale: 1.1 }}>
-            <Box alignItems="center" d="flex">
-              <Img
-                src="/Layer_1.png"
-                h="9"
-                display="inline"
-                mr="3"
-                alignSelf="center"
-              />
-              <Text
-                as="h1"
-                fontSize="xl"
-                fontWeight="extrabold"
-                maxW="48rem"
-                display="inline"
-              >
-                OurCity
-              </Text>
-            </Box>
-          </motion.a>
+          
+          <Box alignItems="center" d="flex">
+            <Img
+              src="/Layer_1.png"
+              h="9"
+              display="inline"
+              mr="3"
+              alignSelf="center"
+            />
+            <Text
+              as="h1"
+              fontSize="xl"
+              fontWeight="extrabold"
+              maxW="48rem"
+              display="inline"
+            >
+              OurCity
+            </Text>
+          </Box>
 
-          <NavContent.Desktop
+          <DesktopNavContent
             display={{
               base: "none",
               md: "flex",
-            }}
-          />
-          <NavContent.Mobile
-            display={{
-              base: "flex",
-              md: "none",
             }}
           />
         </Flex>
