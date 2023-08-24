@@ -151,12 +151,13 @@ export const NewForm = (props) => {
                       </FormControl>
                       )}
                       
-                      <FormControl isRequired borderRadius="20" color="gray.900">
-                      <Textarea id="message" name="message" placeholder='Describe Your Idea (max 250 words)' rows="5" color="black"
+                      
+                    
+                    </FormControl>
+                    <FormControl isRequired borderRadius="20" color="gray.900">
+                      <Textarea id="message" name="message" placeholder='Describe Your Idea (max 250 words)' rows="10" color="black"
                         style={{ backgroundColor: 'white'
                         }}   />
-                    </FormControl>
-                    
                     </FormControl>
 
                     <FormControl isRequired borderRadius="20" color="gray.900">
