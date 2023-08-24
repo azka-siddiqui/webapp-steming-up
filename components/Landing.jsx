@@ -1,6 +1,3 @@
-import { motion } from "framer-motion";
-import Head from "next/head";
-
 import {
   Box,
   Heading,
@@ -15,25 +12,24 @@ import {
 export function Landing({ children, noAnim }) {
   return (
     <Box
-      backgroundImage="url('/bkg.png')"
-      bgSize="cover"
-      bgPos="center"
-      bgImage="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(23, 0, 35)), url('/bkg.png') "
-      bgRepeat="no-repeat"
-      h="80vh"
+      bgImage="linear-gradient(to bottom, rgba(21, 20, 38, 0), rgba(21, 20, 38, 0.3)), url('/bkg.png') "
+      bgSize='cover'
+      bgPos='center'
+      bgRepeat='no-repeat'
+      h='80vh'
     >
-      <Container maxW={"3xl"} pt={16}>
+      <Container maxW={"3xl"} pt={13}>
         <Stack
           as={Box}
           textAlign={"center"}
-          position="relative"
+          position='relative'
           spacing={{ base: 8, md: 5 }}
           py={{ base: 20, md: 36 }}
         >
           <Box display={{ sm: "none", md: "block" }}>
             <Icon
               as={Arrow}
-              color="green.100"
+              color='green.100'
               w={71}
               transform={"rotate(240deg)"}
               position={"absolute"}
@@ -42,11 +38,11 @@ export function Landing({ children, noAnim }) {
             />
             <Text
               fontSize={"2xl"}
-              color="green.100"
+              color='green.100'
               fontFamily={"Oswald"}
               position={"absolute"}
               right={480}
-              fontWeight="bold"
+              fontWeight='bold'
               top={110}
               transform={"rotate(0deg)"}
             >
@@ -54,25 +50,47 @@ export function Landing({ children, noAnim }) {
             </Text>
           </Box>
           <Heading
-            fontWeight="bold"
-            color="white"
+            fontWeight='bold'
+            color='white'
             fontSize={{ base: "2xl", sm: "4xl", md: "8xl" }}
             lineHeight={"110%"}
           >
             Our
-            <Text as={"span"} color={"#F1C232"}>
+            <Text
+              as={"span"}
+              color={"#32a852"}
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(255, 255, 255, 0.3), #F9F146)",
+                borderRadius: "20px",
+                marginLeft: "10px",
+                padding: "0px 10px",
+                position: "relative",
+                display: "center",
+              }}
+            >
               City
             </Text>{" "}
+            <div
+              style={{
+                backgroundImage: "url('bkg.jpg')",
+                backgroundSize: "cover",
+                borderRadius: "10px",
+                position: "relative",
+                width: "-60px",
+                height: "50px",
+                display: "inline-block",
+              }}
+            />
           </Heading>
 
-          <Text color={"white"} fontWeight="bold">
-          Creating Places. Engaging Minds.
+          <Text color={"white"} fontWeight='bold'>
+            Creating Places. Engaging Minds.
           </Text>
-          <Text color={"white"} fontWeight = "semibold">
-          We are creating meaningful ways for youth to shape equitable and sustainable cities.
+          <Text color={"white"} fontWeight='semibold'>
+            We are creating meaningful ways for youth to shape equitable and
+            sustainable cities.
           </Text>
-          
-
           <Stack
             direction={"row"}
             spacing={3}
@@ -81,25 +99,24 @@ export function Landing({ children, noAnim }) {
             position={"relative"}
           >
             <Button
-              color="#494949"
-              as="a"
-              href="https://forms.gle/ukcG7V5y4ovW4uey7"
-              bg={"#F1C232"}
-              rounded={"full"}
+              color='white'
+              border-color='white'
+              border-radius='5px'
+              as='a'
+              href='/form'
+              bg={"#212D71"}
               px={6}
               _hover={{
-                bg: "#c9a228",
+                bg: "#56d679",
               }}
-              target="_blank"
+              target='_blank'
             >
-              Youth led city building
+              Fill out our form here!
             </Button>
-
           </Stack>
         </Stack>
       </Container>
     </Box>
-
   );
 }
 
