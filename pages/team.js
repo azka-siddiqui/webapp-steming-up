@@ -8,7 +8,7 @@ import {
     Text
   } from "@chakra-ui/react";
 
-export const OurTeam = () => {
+const OurTeam = () => {
     return (
         <>
             <Box textAlign="center" maxW="75%" maxH = "100%" mx="auto" marginBottom="5%" padding="20px" border={"1px solid white"} id="ourteam">
@@ -42,3 +42,5 @@ export const OurTeam = () => {
         </>
     )
 }
+
+export default OurTeam;
