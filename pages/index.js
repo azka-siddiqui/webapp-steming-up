@@ -42,7 +42,7 @@ export default function Home() {
             <News/>
 
             <SmSep line/>
-
+            
             <OurTeam/>
 
             <Footer />
