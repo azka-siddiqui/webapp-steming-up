@@ -26,25 +26,11 @@ export const BookletTable = () => {
         </Text>
         < div className = "centered-list">
                 <ul className="guideTools" style={{ listStyleType: 'disc', listStylePosition: 'inside', fontSize: '18px', color: 'white', marginLeft: '10px'}}>
-                <li >Guiding principles</li>
-                <li>Case Studies</li>
-                <li>Best Practices</li>
+                  <li >Guiding principles</li>
+                  <li>Case Studies</li>
+                  <li>Best Practices</li>
                 </ul>
           </div>
-
-        <Button
-        mt = "10px"
-          color="#494949"
-          as="a"
-          bg={"#32a852"}
-          px={6}
-          _hover={{
-            bg: "#56d679",
-          }}
-          target="_blank"
-        >
-          Learn more
-        </Button>
       </Box>
     </SimpleGrid>
   );

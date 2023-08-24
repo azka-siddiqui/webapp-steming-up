@@ -7,6 +7,7 @@ import { BookletTable } from "../components/BookletTable";
 import {
     Box,
     Heading,
+    Button
   } from "@chakra-ui/react";
 
 export default function workshops() {
@@ -29,13 +30,15 @@ export default function workshops() {
                 size="3xl"
                 color="#c9ac2c"
                 fontWeight="bold"
-                id="workshops"
+                mt={10}
               >
                 Workshops
               </Heading>
         </Box>
 
-        <BookletTable/>
+        <BookletTable id="toolkit"/>
+
+        <br id="workshops"/>
 
         <TwoColWithPic
               img="/workshop1.jpeg"
@@ -52,6 +55,24 @@ export default function workshops() {
             , and evaluate neighbourhoods from different perspectives. Additional activities include a guided walking tour of a livable neighbourhood in the city, qualitative and quantitative research, and peer-to-peer teaching."
             align="right"
         />
+
+        <Box textAlign={"center"} id="calendar">
+            <Button
+              color="white"
+              border-color = "white"
+              border-radius = "5px"
+              as="a"
+              href="/calendar"
+              bg={"#212D71"}
+              px={6}
+              _hover={{
+                bg: "#56d679",
+              }}
+              target="_blank"
+            >
+              Check out our workshop calendar here!
+            </Button>
+          </Box>
 
         <Footer />
             

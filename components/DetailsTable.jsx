@@ -47,7 +47,7 @@ export function DetailsTable ({ children, noAnim }) {
           <Text color="white" mx="auto" ml = "-14" maxWidth="300px" mt="10" fontSize="sm" textAlign="center">
           We aim to engage youth in the consultation and design phases of youth-facing projects and services for public and non-profit organizations.
           </Text>
-          <Button colorScheme="green" mt="10" ml = "-14">
+          <Button colorScheme="green" mt="10" ml = "-14" as="a" href="/workshops">
             Learn More
           </Button>
         </Box>
@@ -60,7 +60,7 @@ export function DetailsTable ({ children, noAnim }) {
           <Text color="white" mx="auto" ml = "-12" maxWidth="300px" mt="10" fontSize="sm" textAlign="center">
           We deliver city-building workshops for schools and youth organizations that focus on sustainability.
           </Text>
-          <Button colorScheme="green" mt="20" ml = "-12">
+          <Button colorScheme="green" mt="20" ml = "-12" as="a" href="/workshops#workshops">
             Learn More
           </Button>
         </Box>
@@ -73,7 +73,7 @@ export function DetailsTable ({ children, noAnim }) {
           <Text color="white" mx="auto" ml = "-12" maxWidth="300px" mt="10" fontSize="sm" textAlign="center">
           We enable high school students to lead their own community design-build projects by providing inspiration, leadership training, and project mentorship.
           </Text>
-          <Button colorScheme="green" mt="3" ml = "-12">
+          <Button colorScheme="green" mt="3" ml = "-12" as="a" href="/about">
             Learn More
           </Button>
         </Box>
