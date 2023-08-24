@@ -11,7 +11,7 @@ import {
 export const OurTeam = () => {
     return (
         <>
-            <Box textAlign="center" maxW="75%" maxH = "100%" mx="auto" marginBottom="5%" padding="20px" border={"1px solid white"} id = "team">
+            <Box textAlign="center" maxW="75%" maxH = "100%" mx="auto" marginBottom="5%" padding="20px" border={"1px solid white"} id="ourteam">
                 <Heading as="h1" size="2xl" color="#c9ac2c" fontWeight="bold">
                     Our Team
                 </Heading>
