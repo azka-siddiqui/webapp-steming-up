@@ -138,6 +138,20 @@ export const NewForm = (props) => {
                         <option value="text">Text</option>
                         <option value="video">Video</option>
                     </Select>
+                    {submissionType === "video" && (
+                    <FormControl isRequired borderRadius="20" color="gray.900">
+                        <input
+                        type="file"
+                        name="video"
+                        accept="video/*"
+                         onChange={(e) => {
+                          const selectedVideo = e.target.files[0];
+                        }}
+                        />
+                      </FormControl>
+                      )}
+
+                    
                     </FormControl>
 
                     <FormControl isRequired borderRadius="20" color="gray.900">
