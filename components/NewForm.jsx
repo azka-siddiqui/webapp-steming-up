@@ -143,6 +143,24 @@ export const NewForm = (props) => {
                         <option value="text">Text</option>
                         <option value="video">Video</option>
                     </Select>
+                    {submissionType === 'text' && (
+                    <Textarea
+                    id="ideaText"
+                    name="ideaText"
+                    placeholder="Describe Your Idea (max 250 words)"
+                    rows="4"
+                    maxLength="250"
+                    style={{ backgroundColor: 'white' }}
+                    />
+                    )}
+                    {submissionType === 'video' && (
+                    <input
+                    type="file"
+                    id="videoUpload"
+                    name="videoUpload"
+                    accept="video/*"
+                    />
+                    )}
                     </FormControl>
 
                     <FormControl isRequired borderRadius="20" color="gray.900">
