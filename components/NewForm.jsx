@@ -79,7 +79,12 @@ export const NewForm = (props) => {
     >
       <div>
         <header style={headerStyle}>Innovation Form</header>
-        <p style={{ ...paragraphStyle, marginBottom: '30px' }}>Fill out this form to submit an idea for a sustainability initiative in your community!</p>
+        <p style={{ ...paragraphStyle, marginBottom: '30px' }}>
+          Fill out this form to submit an idea for a sustainability initiative in your community! <br/><br/>
+          This form is YOUR way of making a change in your city. It is a way for you to share your ideas to make your city 
+          more safe, clean and sustainable, and it is a way for you to connect with people in areas of urban development that 
+          you are passionate about and to find people who are as passionate about your issue as you are. <br/>
+        </p>
       </div>
 
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20} mx="auto" textAlign="center" justifyContent="center" alignItems="center">
