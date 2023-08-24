@@ -32,7 +32,7 @@ export const NavBar = ({ bg }) => (
           height="100%"
         >
           
-          <Box alignItems="center" d="flex">
+          <Box alignItems="center" display="flex">
             <Img
               src="/Layer_1.png"
               h="9"
