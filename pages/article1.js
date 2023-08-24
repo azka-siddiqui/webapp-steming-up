@@ -30,7 +30,7 @@ import {
             <Box maxW="1000px" id="about" mt = "30px" bg="white" padding="30px" margin="30px">
                 <Box mt={10} margin="10px" textAlign="center">
                     <Heading color="darkgreen">How the highway-dependency of Canadian cities can be seen today</Heading>
-                    <Text fontWeight="bold">And why mixed-use zoning doesn’t always make sense in North American cities and suburbs.</Text>
+                    <Text fontWeight="bold">And why mixed-use zoning doesn&apos;t always make sense in North American cities and suburbs.</Text>
                 </Box>
                 
                 <SmSep/>
@@ -53,7 +53,7 @@ import {
 
                     Mixed-use zoning is a type of urban development that blends multiple uses such as residential, commercial, cultural, 
                     institutional, or entertainment into one space where those functions are physically and functionally integrated⁶. While 
-                    mixed-use zoning has been increasingly common in American cities as urban populations grew⁵, it doesn't always make sense 
+                    mixed-use zoning has been increasingly common in American cities as urban populations grew⁵, it doesn&apos;t always make sense 
                     in North American cities and suburbs. With massive distances between amenities, this results in high car dependency and 
                     significant negative impacts on our planet⁶. However, there are still many ways to allow Canadian cities to become 
                     climate-conscious while still maintaining their unique urban design characteristics⁶. 
@@ -63,7 +63,7 @@ import {
 
                     In conclusion, the highway-dependency of Canadian cities can be seen today due to car dependency in North America and the 
                     importance of highways in connecting different types of buildings. Mixed-use zoning is a type of urban development that has 
-                    been increasingly common in American cities but doesn't always make sense in North American cities and suburbs due to high 
+                    been increasingly common in American cities but doesn&apos;t always make sense in North American cities and suburbs due to high 
                     car dependency. However, there are still ways to allow Canadian cities to become climate-conscious while still maintaining 
                     their unique urban design characteristics.
                 </Text>

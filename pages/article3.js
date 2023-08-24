@@ -43,7 +43,7 @@ import {
 
                 <Text>
                     Bill 23, also known as the More Homes Built Faster Act, is a housing bill passed by the Ontario government in 
-                    November 2022. The bill is part of the province's plan to build 1.5 million homes in 10 years. While the bill 
+                    November 2022. The bill is part of the province&apos;s plan to build 1.5 million homes in 10 years. While the bill 
                     aims to spur development, critics argue that it will lead to higher property taxes, weaken conservation 
                     authority powers, and not actually make homes more affordable. The new law is just one move among many in a 
                     flurry of recent housing changes from the Progressive Conservative government, including plans to open some 
