@@ -11,6 +11,7 @@ import {
 import { SignUpModal } from "../components/SignUpModal";
 import { NavBar } from "../components/NavBar";
 import { SmSep } from "../components/SmSep";
+import { Map } from "../components/map";
 import { Footer } from "../components/Footer";
 export default function Home() {
   React.useLayoutEffect = React.useEffect 
