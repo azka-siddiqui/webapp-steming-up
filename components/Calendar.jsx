@@ -11,7 +11,6 @@ import {
 import React from "react"
 
 export const WorkshopTimeline = () => {
-  
     return (
       <Box className="main" width="80%" mx={"auto"}>
             <Heading mb={10} mt={10} color="#c9ac2c">
@@ -27,8 +26,8 @@ export const WorkshopTimeline = () => {
                 </Thead>
                 <Tbody>
                         {calendar &&
-                            calendar.map((item) =>(
-                                <Tr>
+                            calendar.map((item, index) => (
+                                <Tr key={index}>
                                     <Td>{item.date}</Td>
                                     <Td>{item.title}</Td>
                                     <Td>{item.time}</Td>
@@ -36,8 +35,6 @@ export const WorkshopTimeline = () => {
                             ))}
                 </Tbody>
             </Table>
-            
         </Box>
     );
-  }
-  
+}

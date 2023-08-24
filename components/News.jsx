@@ -38,7 +38,7 @@ export const News = () => {
           </Text>
           </div>
           <div style={{ textAlign: "center" }}>
-          <Button type="button" colorScheme="gray" mt={4}>
+          <Button type="button" colorScheme="gray" mt={4} as="a" href="/article1">
               LEARN MORE
           </Button>
           </div>
