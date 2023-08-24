@@ -138,6 +138,25 @@ export const NewForm = (props) => {
                         <option value="text">Text</option>
                         <option value="video">Video</option>
                     </Select>
+                    {submissionType === "video" && (
+                    <FormControl isRequired borderRadius="20" color="gray.900">
+                        <input
+                        type="file"
+                        name="video"
+                        accept="video/*"
+                         onChange={(e) => {
+                          const selectedVideo = e.target.files[0];
+                        }}
+                        />
+                      </FormControl>
+                      )}
+                      
+                      <FormControl isRequired borderRadius="20" color="gray.900">
+                      <Textarea id="message" name="message" placeholder='Describe Your Idea (max 250 words)' rows="5" color="black"
+                        style={{ backgroundColor: 'white'
+                        }}   />
+                    </FormControl>
+                    
                     </FormControl>
 
                     <FormControl isRequired borderRadius="20" color="gray.900">
@@ -161,10 +180,7 @@ export const NewForm = (props) => {
                         style={{ backgroundColor: 'white' }} />
                     </FormControl>
 
-                    <FormControl isRequired borderRadius="20" color="gray.900">
-                      <Textarea id="message" name="message" placeholder='Describe Your Idea (max 250 words)' rows="5" color="black"
-                        style={{ backgroundColor: 'white' }}  />
-                    </FormControl>
+                    
 
                     <FormControl isRequired borderRadius="20" color="gray.900">
                       <Checkbox id="agreeToTerms" name="agreeToTerms" color = "white" textAlign = "left">I agree to the terms and conditions</Checkbox>
