@@ -13,7 +13,7 @@ import React from "react"
 export const WorkshopTimeline = () => {
   
     return (
-      <Box className="main" width="75%" mx={"auto"}>
+      <Box className="main" width="80%" mx={"auto"}>
             <Heading mb={10} mt={10} color="#c9ac2c">
               Workshop Calendar
             </Heading>
