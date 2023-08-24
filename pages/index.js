@@ -41,7 +41,7 @@ export default function Home() {
 
             <News/>
 
-            <SmSep/>
+            <SmSep line/>
 
             <OurTeam/>
 

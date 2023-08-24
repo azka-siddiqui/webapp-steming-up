@@ -28,9 +28,9 @@ import {
             <NavBar bg="#151426"/>
 
             <Box maxW="1000px" id="about" mt = "30px" bg="white" padding="30px" margin="30px">
-                <Box color="#c9ac2c" mt={10} margin="10px" textAlign="center">
-                    <Heading>How the highway-dependency of Canadian cities can be seen today</Heading>
-                    <Text>And why mixed-use zoning doesn’t always make sense in North American cities and suburbs.</Text>
+                <Box mt={10} margin="10px" textAlign="center">
+                    <Heading color="darkgreen">How the highway-dependency of Canadian cities can be seen today</Heading>
+                    <Text fontWeight="bold">And why mixed-use zoning doesn’t always make sense in North American cities and suburbs.</Text>
                 </Box>
                 
                 <SmSep/>

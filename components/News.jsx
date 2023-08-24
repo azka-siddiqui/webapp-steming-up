@@ -54,7 +54,7 @@ export const News = () => {
           </Text>
           </div>
           <div style={{ textAlign: "center" }}>
-          <Button type="button" colorScheme="gray" mt={4}>
+          <Button type="button" colorScheme="gray" mt={4} as="a" href="/article2">
               LEARN MORE
           </Button>
           </div>
@@ -71,7 +71,7 @@ export const News = () => {
           </Text>
           </div>
           <div style={{ textAlign: "center" }}>
-          <Button type="button" colorScheme="gray" mt={4}>
+          <Button type="button" colorScheme="gray" mt={4} as="a" href="/article3">
               LEARN MORE
           </Button>
           </div>
@@ -79,11 +79,8 @@ export const News = () => {
       </SimpleGrid>
 
       <Box textAlign="center" mt={8}>
-        <Button className="basicText" colorScheme="blue" size="lg" backgroundColor = "SeaGreen" color = "white" border-radius = "5px">
-          Visit Our Blog
-        </Button>
         <Text className="basicText" fontSize="16px" mt={2} color = "white">
-          For more stories from our team.
+          Subscribe for more stories from our team.
         </Text>
       </Box>
     </Box>
