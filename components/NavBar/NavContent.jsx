@@ -18,8 +18,8 @@ const links = [
     href: "/about",
   },
   {
-    label: "Our Team",
-    href: "/ourteam",
+    label: "Sponsors",
+    href: "/ourSponsors",
   },
   {
     label: "FAQ",
