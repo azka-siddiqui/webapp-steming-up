@@ -1,6 +1,6 @@
 import { Box, Flex, Text, Img } from "@chakra-ui/react";
 import * as React from "react";
-import { NavContent } from "./NavContent";
+import { DesktopNavContent } from "./NavContent";
 
 export const NavBar = ({ bg }) => (
   <Box
@@ -51,16 +51,10 @@ export const NavBar = ({ bg }) => (
             </Text>
           </Box>
 
-          <NavContent.Desktop
+          <DesktopNavContent
             display={{
               base: "none",
               md: "flex",
-            }}
-          />
-          <NavContent.Mobile
-            display={{
-              base: "flex",
-              md: "none",
             }}
           />
         </Flex>
