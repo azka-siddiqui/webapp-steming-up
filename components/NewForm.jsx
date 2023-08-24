@@ -150,7 +150,12 @@ export const NewForm = (props) => {
                         />
                       </FormControl>
                       )}
-
+                      
+                      <FormControl isRequired borderRadius="20" color="gray.900">
+                      <Textarea id="message" name="message" placeholder='Describe Your Idea (max 250 words)' rows="5" color="black"
+                        style={{ backgroundColor: 'white'
+                        }}   />
+                    </FormControl>
                     
                     </FormControl>
 
@@ -175,10 +180,7 @@ export const NewForm = (props) => {
                         style={{ backgroundColor: 'white' }} />
                     </FormControl>
 
-                    <FormControl isRequired borderRadius="20" color="gray.900">
-                      <Textarea id="message" name="message" placeholder='Describe Your Idea (max 250 words)' rows="5" color="black"
-                        style={{ backgroundColor: 'white' }}  />
-                    </FormControl>
+                    
 
                     <FormControl isRequired borderRadius="20" color="gray.900">
                       <Checkbox id="agreeToTerms" name="agreeToTerms" color = "white" textAlign = "left">I agree to the terms and conditions</Checkbox>
