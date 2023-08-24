@@ -1,7 +1,6 @@
 import { Divider, Box, Icon, Link } from "@chakra-ui/react";
 import {
   AiOutlineInstagram,
-  AiOutlineTwitter,
   AiOutlineMail,
 } from "react-icons/ai";
 

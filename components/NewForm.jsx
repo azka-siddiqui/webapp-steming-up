@@ -79,7 +79,12 @@ export const NewForm = (props) => {
     >
       <div>
         <header style={headerStyle}>Innovation Form</header>
-        <p style={{ ...paragraphStyle, marginBottom: '30px' }}>Fill out this form to submit an idea for a sustainability initiative in your community!</p>
+        <p style={{ ...paragraphStyle, marginBottom: '30px' }}>
+          Fill out this form to submit an idea for a sustainability initiative in your community! <br/><br/>
+          This form is YOUR way of making a change in your city. It is a way for you to share your ideas to make your city 
+          more safe, clean and sustainable, and it is a way for you to connect with people in areas of urban development that 
+          you are passionate about and to find people who are as passionate about your issue as you are. <br/>
+        </p>
       </div>
 
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20} mx="auto" textAlign="center" justifyContent="center" alignItems="center">
@@ -138,6 +143,24 @@ export const NewForm = (props) => {
                         <option value="text">Text</option>
                         <option value="video">Video</option>
                     </Select>
+                    {submissionType === 'text' && (
+                    <Textarea
+                    id="ideaText"
+                    name="ideaText"
+                    placeholder="Describe Your Idea (max 250 words)"
+                    rows="4"
+                    maxLength="250"
+                    style={{ backgroundColor: 'white' }}
+                    />
+                    )}
+                    {submissionType === 'video' && (
+                    <input
+                    type="file"
+                    id="videoUpload"
+                    name="videoUpload"
+                    accept="video/*"
+                    />
+                    )}
                     </FormControl>
 
                     <FormControl isRequired borderRadius="20" color="gray.900">
@@ -161,10 +184,7 @@ export const NewForm = (props) => {
                         style={{ backgroundColor: 'white' }} />
                     </FormControl>
 
-                    <FormControl isRequired borderRadius="20" color="gray.900">
-                      <Textarea id="message" name="message" placeholder='Describe Your Idea (max 250 words)' rows="5" color="black"
-                        style={{ backgroundColor: 'white' }}  />
-                    </FormControl>
+                    
 
                     <FormControl isRequired borderRadius="20" color="gray.900">
                       <Checkbox id="agreeToTerms" name="agreeToTerms" color = "white" textAlign = "left">I agree to the terms and conditions</Checkbox>
