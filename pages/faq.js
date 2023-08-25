@@ -18,7 +18,7 @@ export default function faq() {
       <Box
       bgPos="center"
       bgRepeat="repeat"
-      minH="40vh"
+      minH="100vh"
       bg="rgb(21, 20, 38)">
         <Head>
           <title>OurCity - FAQ</title>
