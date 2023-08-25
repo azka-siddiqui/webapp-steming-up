@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     const toEmail = req.body.email;
 
 
-    const doc = new GoogleSpreadsheet('11JaWSnUXRrKh0AhMmbBRhJqf4mWHhGMn8r4eyz4eaFo');
+    const doc = new GoogleSpreadsheet('1Id_DFHcfX0rD_WAxY0GgkMNbeVD09eMcN5mEsczvi1I');
     await doc.useServiceAccountAuth({
         client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
         private_key: process.env.GOOGLE_PRIVATE_KEY,
