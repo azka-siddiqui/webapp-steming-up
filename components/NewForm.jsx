@@ -87,7 +87,7 @@ export const NewForm = (props) => {
         </p>
       </div>
 
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20} mx="auto" textAlign="center" justifyContent="center" alignItems="center">
+       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20} mx="auto" textAlign="center" justifyContent="center" alignItems="center">
         <Box mx="auto" w="100%">
           {!isSubmitted && (
             <Formik
