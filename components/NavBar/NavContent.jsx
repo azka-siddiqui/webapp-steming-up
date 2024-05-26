@@ -6,11 +6,11 @@ import { DesktopNavLink } from "./NavLink";
 
 const links = [
   {
-    label: "Cities For Youth",
+    label: "EcoScan",
     href: "/",
   },
   {
-    label: "Workshops",
+    label: "Sample Species",
     href: "/workshops",
   },
   {

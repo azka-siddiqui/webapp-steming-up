@@ -18,7 +18,7 @@ import {
         alignItems="center"
         bg="rgb(21, 20, 38)">
             <Head>
-            <title>OurCity - Workshop Timeline</title>
+            <title>EcoScan Features</title>
             <link rel="logo" href="/Logo.png" />
             </Head>
 

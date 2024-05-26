@@ -2,16 +2,26 @@
   {
     "name": "Azka Siddiqui",
     "pic": "/profileFocusYouth.png",
-    "desc": "IG Group 1"
+    "desc": "Team 5"
   },
   {
-    "name": "Aliza Faraz",
-    "pic": "/AlizaProfile.png",
-    "desc": "IG Group 1"
+    "name": "Anne Regan",
+    "pic": "/blankperson.jpeg",
+    "desc": "Team 5"
   },
   {
-    "name": "Rahima Nur",
-    "pic": "/rahimaProfile.jpg",
-    "desc": "IG Group 1"
+    "name": "Alexandra Nguyen",
+    "pic": "/blankperson.jpeg",
+    "desc": "Team 5"
+  },
+  {
+    "name": "Rebecca Field",
+    "pic": "/blankperson.jpeg",
+    "desc": "Team 5"
+  },
+  {
+    "name": "Eirene Mehta",
+    "pic": "/blankperson.jpeg",
+    "desc": "Team 5"
   }
 ]

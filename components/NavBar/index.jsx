@@ -47,7 +47,7 @@ export const NavBar = ({ bg }) => (
               maxW="48rem"
               display="inline"
             >
-              OurCity
+              EcoScan
             </Text>
           </Box>
 

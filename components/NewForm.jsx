@@ -78,12 +78,11 @@ export const NewForm = (props) => {
     id="form" 
     >
       <div>
-        <header style={headerStyle}>Innovation Form</header>
+        <header style={headerStyle}>Scanner Tool</header>
         <p style={{ ...paragraphStyle, marginBottom: '30px' }}>
-          Fill out this form to submit an idea for a sustainability initiative in your community! <br/><br/>
-          This form is YOUR way of making a change in your city. It is a way for you to share your ideas to make your city 
-          more safe, clean and sustainable, and it is a way for you to connect with people in areas of urban development that 
-          you are passionate about and to find people who are as passionate about your issue as you are. <br/>
+         Use this scanner to scan your plant and determine if it is an invasive species. <br/><br/>
+         Before we submit your report, we would like to get some additional information to aid in preventing future growth.
+           <br/>
         </p>
       </div>
 
@@ -111,9 +110,9 @@ export const NewForm = (props) => {
                   <VStack divider={<StackDivider borderColor='gray.200' />} spacing={4} align='stretch'>
                   <FormControl isRequired borderRadius="20" color="black">
                     <Input
-                        id='name'
-                        name="name"
-                        placeholder='Name'
+                        id='type of property'
+                        name="type of property"
+                        placeholder='Region'
                         color="black"
                         style={{ backgroundColor: 'white' }} 
                     />
@@ -124,7 +123,7 @@ export const NewForm = (props) => {
                         id='email'
                         name="email"
                         type="email"
-                        placeholder='Email'
+                        placeholder='Number of Plants'
                         color="black"
                         style={{ backgroundColor: 'white' }}
                     />
@@ -139,28 +138,12 @@ export const NewForm = (props) => {
                         color="Gainsboro"
                         style={{ backgroundColor: 'white', color: 'grey' }}
                     >
-                        <option value="SubmissionType">Submission Type</option>
-                        <option value="text">Text</option>
-                        <option value="video">Video</option>
+                        <option value="typeA">Type of Property</option>
+                        <option value="typeB">Private Property</option>
+                        <option value="typeC">City Park</option>
+                        <option value="typeD">City Woodlands</option>
+                        <option value="typeE">Unsure</option>
                     </Select>
-                    {submissionType === 'text' && (
-                    <Textarea
-                    id="ideaText"
-                    name="ideaText"
-                    placeholder="Describe Your Idea (max 250 words)"
-                    rows="4"
-                    maxLength="250"
-                    style={{ backgroundColor: 'white' }}
-                    />
-                    )}
-                    {submissionType === 'video' && (
-                    <input
-                    type="file"
-                    id="videoUpload"
-                    name="videoUpload"
-                    accept="video/*"
-                    />
-                    )}
                     </FormControl>
 
                     <FormControl isRequired borderRadius="20" color="gray.900">
@@ -172,19 +155,16 @@ export const NewForm = (props) => {
                         color="Gainsboro"
                         style={{ backgroundColor: 'white', color: 'Grey' }}
                     >
-                        <option value="areaOfFocus">Area Of Focus</option>
-                        <option value="transportation">Transportation and Energy</option>
-                        <option value="greenBuildings">Green Buildings</option>
-                        <option value="waterconservation">Water Conservation</option>
-                        <option value="wasteReduction"> Waste Reduction</option>
-                        <option value="renewableEnergy"> Renewable Energy </option>
-                        <option value="communityEngagement"> Community Engagement</option>
+                        <option value="areaOfFocus">Growth Rate of Plant</option>
+                        <option value="transportation">Rapid</option>
+                        <option value="greenBuildings">Moderate</option>
+                        <option value="waterconservation">Slow</option>
                         <option value="other"> Other</option>
                     </Select>
                     </FormControl>
 
                     <FormControl isRequired borderRadius="20" color="gray.900">
-                      <Textarea id="potentialImpact" name="potentialImpact" placeholder='Potential Impact' rows="5" color="black"
+                      <Textarea id="potentialImpact" name="potentialImpact" placeholder='Additional Information' rows="2" color="black"
                         style={{ backgroundColor: 'white' }} />
                     </FormControl>
 

@@ -14,7 +14,7 @@ import { NavListItem } from "./components/NavBar/NavListItem";
 
 const links = [
   {
-    label: "Cities For Youth",
+    label: "EcoScan",
     href: "/",
   },
   {

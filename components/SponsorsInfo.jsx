@@ -11,7 +11,7 @@ import {
 export const SponsorsInfo = () => {
     return(
         <>
-            <Box textAlign="center" maxW="75%" mx="auto" marginBottom="5%" bg="white" padding="20px" mt={30}>
+            <Box textAlign="center" maxW="75%" mx="auto" marginBottom="2%" bg="white" padding="20px" mt={30}>
                 <Heading as="h1" size="3xl" fontWeight="bold" color="darkgreen">
                     Sponsors
                 </Heading>
@@ -19,7 +19,7 @@ export const SponsorsInfo = () => {
                 <SimpleGrid
                 columns={{ base: 1, md: 2, lg: 3 }}
                 spacing={20}
-                mt={12}
+                mt={4}
                 >
                     {Sponsors.map((logo, index) => (
                         <Box key={index}>
@@ -34,21 +34,21 @@ export const SponsorsInfo = () => {
 
             <Box color="white" maxW="75%" mx="auto">
                 <Heading mb={10} color="#c9ac2c">
-                    Why should you sponsor OurCity?
+                    Why should you sponsor EcoScan?
                 </Heading>
                 
                 <Text ml={20}>
-                    OurCity sponsors receive a variety of benefits for supporting our non-profit organization. To outline a few:
+                    EcoScan sponsors receive a variety of benefits for supporting our app. To outline a few:
                         <br/> <br/>
                 </Text>
-                <Text ml={20} color="#32a852">
+                <Text ml={20} color="white">
                     <ul>
                         <li>
-                            Positive brand awareness: OurCity features sponsor logos and names across our home site and other media. Your brand will become associated with our cause.
+                            Positive brand awareness: EcoScan features sponsor logos and names on our app and other media. Your brand will become associated with our cause.
                         </li>
                         <br/>
                         <li>
-                            Introduction to a new audience: Through OurCity sponsors can connect to a our viewers and subscribers and pitch products or services to an audience that might not be familiar with them.
+                            Introduction to a new audience: Through EcoScan sponsors can connect to a our viewers and subscribers and pitch products or services to a wider audience.
                         </li>
                         <br/>
                         <li>
@@ -60,8 +60,8 @@ export const SponsorsInfo = () => {
                 </Text>
             </Box>
                 
-            <Text bg="white" width="100%" padding={20} textAlign="center">
-                Interested in becoming a sponsor? Email us at <Link textDecoration={"underline"} fontWeight="bold" color="darkgreen" href="mailto:stemingup@gmail.com" > stemingup@gmail.com </Link>
+            <Text bg="#c6cfe1" width="100%" padding={20} textAlign="center">
+                Interested in becoming a sponsor? Email us at <Link textDecoration={"underline"} fontWeight="bold" color="darkgreen" href="mailto:stemingup@gmail.com" > hello@ecoscan.com </Link>
             </Text>
         </>
     )

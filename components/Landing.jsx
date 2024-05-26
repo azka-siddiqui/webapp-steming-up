@@ -2,6 +2,7 @@ import {
   Box,
   Heading,
   Container,
+  Img,
   Text,
   Button,
   Stack,
@@ -9,10 +10,23 @@ import {
   createIcon,
 } from "@chakra-ui/react";
 
+const Logo = () => {
+  return (
+    <Image
+      src="/ecoscan.png"
+      alt="Website Logo"
+      width={{ base: "100px", sm: "150px", md: "200px" }}
+      height="auto"
+    />
+  );
+};
+
+export default Logo;
+
 export function Landing({ children, noAnim }) {
   return (
     <Box
-      bgImage="linear-gradient(to bottom, rgba(21, 20, 38, 0), rgba(21, 20, 38, 0.3)), url('/bkg.png') "
+      bgImage="linear-gradient(to bottom, rgba(21, 20, 38, 0), rgba(21, 20, 38, 0.5)), url('/bjg.png') "
       bgSize='cover'
       bgPos='center'
       bgRepeat='no-repeat'
@@ -27,69 +41,36 @@ export function Landing({ children, noAnim }) {
           py={{ base: 20, md: 36 }}
         >
           <Box display={{ sm: "none", md: "block" }}>
-            <Icon
-              as={Arrow}
-              color='green.100'
-              w={71}
-              transform={"rotate(240deg)"}
-              position={"absolute"}
-              right={400}
-              top={140}
-            />
-            <Text
-              fontSize={"2xl"}
-              color='green.100'
-              fontFamily={"Oswald"}
-              position={"absolute"}
-              right={480}
-              fontWeight='bold'
-              top={110}
-              transform={"rotate(0deg)"}
-            >
-              For youth, by youth
-            </Text>
+          
           </Box>
-          <Heading
-            fontWeight='bold'
-            color='white'
-            fontSize={{ base: "2xl", sm: "4xl", md: "8xl" }}
-            lineHeight={"110%"}
-          >
-            Our
-            <Text
-              as={"span"}
-              color={"#32a852"}
-              style={{
-                background:
-                  "linear-gradient(to bottom, rgba(255, 255, 255, 0.3), #F9F146)",
-                borderRadius: "20px",
-                marginLeft: "10px",
-                padding: "0px 10px",
-                position: "relative",
-                display: "center",
-              }}
-            >
-              City
-            </Text>{" "}
-            <div
-              style={{
-                backgroundImage: "url('bkg.jpg')",
-                backgroundSize: "cover",
-                borderRadius: "10px",
-                position: "relative",
-                width: "-60px",
-                height: "50px",
-                display: "inline-block",
-              }}
-            />
-          </Heading>
+
+          <Box>
+      <Box
+        mt="100"
+        display="flex"
+        justifyContent="center"
+        alignItems="flex-start"
+        height="1vh"
+        background="url('bjg.jpg')"
+        backgroundSize="cover"
+        top={{ base: "10px", md: "40px" }} // Adjust the top position as needed
+        pt={{ base: "1px", md: "40px" }}
+      >
+        <Img
+          src="/ecoscan.png"
+          alt="ecoscan 1"
+          width="200px"
+          mt="-150"
+          height="auto"
+        />
+      </Box>
+    </Box>
 
           <Text color={"white"} fontWeight='bold'>
-            Creating Places. Engaging Minds.
+            Ready to Scan for Invasive Species?
           </Text>
           <Text color={"white"} fontWeight='semibold'>
-            We are creating meaningful ways for youth to shape equitable and
-            sustainable cities.
+            Protecting Our Planet One Snap at a Time
           </Text>
           <Stack
             direction={"row"}
@@ -111,7 +92,7 @@ export function Landing({ children, noAnim }) {
               }}
               target='_blank'
             >
-              Fill out our form here!
+              Use our Scanner Here!
             </Button>
           </Stack>
         </Stack>

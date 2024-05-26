@@ -38,7 +38,7 @@ export const SignUpModal = () => {
                 <ModalContent>
                     <ModalHeader>
                         <Text fontWeight='black'>
-                            Subscribe to the <chakra.span color='#32a852'>OurCity</chakra.span> newsletter!
+                            Download <chakra.span color='#32a852'>EcoScan</chakra.span> on the App Store!
                         </Text>
                     </ModalHeader>
                     <ModalCloseButton />
@@ -46,14 +46,14 @@ export const SignUpModal = () => {
                         <ModalBody>
                             <FormControl isRequired>
                                 <Input id='email' placeholder='e.g. example@example.com' />
-                                <FormHelperText ml='1'>We promise its an email worth reading.</FormHelperText>
+                                <FormHelperText ml='1'>Enter your email to receive regular updates.</FormHelperText>
                             </FormControl>
                         </ModalBody>
 
                         <ModalFooter justifyContent='start'>
                             <Button bg='#c9ac2c' mr={3} fontSize='md' color='white' _hover={{ bg: '#73631f' }} onClick={handleSubmit}>
                                 {loading && <Spinner size='sm' mr={3} />}
-                                Subscribe
+                                Download
                             </Button>
                         </ModalFooter>
                     </>)}

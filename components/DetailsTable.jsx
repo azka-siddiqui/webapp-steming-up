@@ -15,7 +15,7 @@ export function DetailsTable ({ children, noAnim }) {
       <Box
         bgSize="cover"
         bgPos="center"
-        bgImage="linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(21, 20, 38)), url('/peopletalking.jpg') "
+        bgImage="linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(21, 20, 38)), url('/park.jpg') "
         bgRepeat="no-repeat"
         h="110vh"
       >
@@ -29,7 +29,7 @@ export function DetailsTable ({ children, noAnim }) {
 
       <Heading color="white" fontSize="5xl">
         <Text as="span" color="#c9ac2c">
-          What We Do
+          Welcome Back, [Name]
         </Text>
       </Heading>
 
@@ -40,39 +40,33 @@ export function DetailsTable ({ children, noAnim }) {
         marginLeft="30px"
       >
         <Box mt = "10">
-          <Img src="/image1.png" alt="Image 1" />
+          <Img src="/scan.png" alt="Image 1" />
           <Text color="white" mt="12" fontWeight = "bold" textAlign="left">
-            Mentorship
+            Scan Invasive Species
           </Text>
-          <Text color="white" mx="auto" ml = "-14" maxWidth="300px" mt="10" fontSize="sm" textAlign="center">
-          We aim to engage youth in the consultation and design phases of youth-facing projects and services for public and non-profit organizations.
-          </Text>
-          <Button colorScheme="green" mt="10" ml = "-14" as="a" href="/workshops">
+          
+          <Button colorScheme="green" mt="10" ml = "-2" as="a" href="/workshops">
             Learn More
           </Button>
         </Box>
 
         <Box mt = "10">
-          <Img src="/idea2.png" alt="Image 2" />
+          <Img src="/report.png" alt="Image 2" />
           <Text color="white" mt="12" fontWeight = "bold" textAlign="left">
-            Workshops
+            Report Invasive Species on Interactive Map
           </Text>
-          <Text color="white" mx="auto" ml = "-12" maxWidth="300px" mt="10" fontSize="sm" textAlign="center">
-          We deliver city-building workshops for schools and youth organizations that focus on sustainability.
-          </Text>
-          <Button colorScheme="green" mt="20" ml = "-12" as="a" href="/workshops#workshops">
+          
+          <Button colorScheme="green" mt="30" ml = "-2" as="a" href="/workshops#workshops">
             Learn More
           </Button>
         </Box>
 
         <Box mt = "10" textAlign="center">
-          <Img src="/idea3.png" alt="Image 3" />
-          <Text color="white" mt="12" fontWeight = "bold" textAlign="left" ml = "-4">
-            OurCity Program
+          <Img src="/databasepic.png" alt="Image 3" />
+          <Text color="white" mt="12" fontWeight = "bold" textAlign="left" ml = "-2">
+            Invasive Species in Mississauga
           </Text>
-          <Text color="white" mx="auto" ml = "-12" maxWidth="300px" mt="10" fontSize="sm" textAlign="center">
-          We enable high school students to lead their own community design-build projects by providing inspiration, leadership training, and project mentorship.
-          </Text>
+          
           <Button colorScheme="green" mt="3" ml = "-12" as="a" href="/about">
             Learn More
           </Button>

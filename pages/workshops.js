@@ -18,8 +18,8 @@ export default function workshops() {
       minH="40vh"
       bg="rgb(21, 20, 38)">
         <Head>
-          <title>OurCity - Workshops</title>
-          <link rel="logo" href="/Logo.png" />
+          <title>EcoScan - Scanner</title>
+          <link rel="logo" href="/ecoscan.png" />
         </Head>
 
         <NavBar bg="#151426"/>
@@ -32,27 +32,29 @@ export default function workshops() {
                 fontWeight="bold"
                 mt={10}
               >
-                Workshops
+                Sample Species and Location
               </Heading>
         </Box>
 
-        <BookletTable id="toolkit"/>
+        <BookletTable id="scannerpage"/>
 
-        <br id="workshops"/>
+        <br id="scanner"/>
 
         <TwoColWithPic
               img="/workshop1.jpeg"
-              title="City Builders Workshop"
-              desc="City Builders is an introductory Urban Planning x Design Thinking workshop that is fun and hands-on. We will work with you to customize the workshop to the students' needs and level of learning, and to support any course curriculum requirements or objectives.
-              Youth will learn through self-guided exploration, and take ownership in creating and sharing ideas. Activities include urbam planning brainstorming, mapping exercises, as well as prototyping and idea pitching."
+              title="Tree of Heaven"
+              desc="Tree of Heaven is an invasive tree species native to China.
+
+              It spreads quickly and crowds out native plants. The loss of native plants reduces the biodiversity of an area and the ecosystem's health. Tree of Heaven is a preferred host plant for the adult Spotted Lanternfly, an invasive insect that is not present in Canada but is identified as an emerging threat to the forestry industry."
               align="left" 
         />
 
         <TwoColWithPic
             img="/workshop2.jpeg"
-            title="Livable Neighbourhoods Workshop"
-            desc="In this workshop, youth will spend more time understanding the qualities and challenges of neighbouring communities before designing potential solutions. In addition to the skills developed in City Builders, students will learn about the concept of livability, conduct research and identify strengths, weaknesses, opportunities and challenges of local neighbourhoods
-            , and evaluate neighbourhoods from different perspectives. Additional activities include a guided walking tour of a livable neighbourhood in the city, qualitative and quantitative research, and peer-to-peer teaching."
+            title="Wild Parsnip"
+            desc="Wild Parsnip is an invasive plant native to Eurasia and is toxic to humans.
+
+            Contact with sap can cause severe burns when exposed to sunlight. If exposure is suspected, wash the area with soap and water, cover it for 48 hours, and watch for a reaction. The sap can also cause blindness if it gets into the eyes."
             align="right"
         />
 
@@ -70,7 +72,7 @@ export default function workshops() {
               }}
               target="_blank"
             >
-              Check out our workshop calendar here!
+              Check out our app updates here where we regularly notify users of new species added to the database!
             </Button>
           </Box>
 
